@@ -48,7 +48,7 @@ export default function Header() {
             </div>
 
             <div className="hidden lg:flex items-center justify-center h-20">
-              <div className="flex items-center justify-between gap-6 xl:gap-10">
+              <div className="flex items-center justify-between gap-6 ">
                 <Link
                   href="/"
                   className={`px-4 xl:px-6 py-2 rounded-md font-medium transition-colors text-sm xl:text-base ${
