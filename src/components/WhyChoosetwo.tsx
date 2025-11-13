@@ -4,32 +4,31 @@ import Image from 'next/image';
 
 export default function WhyChoosetwo() {
   return (
-    <div className="w-full relative overflow-visible bg-amber-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        {/* Title */}
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-pink-500 mb-8 md:mb-12 text-center md:text-left">
+    <div className="w-full relative overflow-visible bg-amber-50 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-pink-500 mb-8 md:mb-12 text-center ">
           WHY CHOOSE SAY CHEESE KIDS FOR YOUR CHILD&apos;S DENTAL CARE IN CHINO?
         </h2>
       </div>
 
       {/* Main Content Grid */}
-      <div className="flex flex-col lg:flex-row w-full">
+      <div className="flex flex-col lg:flex-row w-full gap-6 lg:gap-8 xl:gap-12">
         {/* Left Section - Full Width Image (touches edges) */}
-        <div className="order-2 lg:order-1 w-full lg:w-1/2 relative -mx-4 sm:-mx-6 lg:mx-0">
+        <div className="order-2 lg:order-1 w-full lg:w-2/5 relative -mx-4 sm:-mx-6 lg:mx-0 lg:-mr-4 xl:-mr-8">
           <div className="relative w-full h-[400px] md:h-[600px] lg:h-[700px]">
             <Image
               src="/Images/whychoose.png"
               alt="Dentist examining child's dental X-ray"
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, 40vw"
               priority
             />
           </div>
         </div>
 
         {/* Right Section - Informational Blocks */}
-        <div className="order-1 lg:order-2 bg-amber-50 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 py-8 lg:py-12 w-[1000px]">
+        <div className="order-1 lg:order-2 bg-amber-50 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 py-8 lg:py-12 lg:flex-1">
             {/* Block 1: Experienced Children's Dentist */}
             <div className="pr-8">
               <div className="flex justify-left mb-4">
@@ -113,20 +112,6 @@ export default function WhyChoosetwo() {
           </div>
         </div>
       </div>
-
-      {/* Wavy Bottom Border */}
-      <svg 
-        className="absolute bottom-0 left-0 w-full"
-        style={{ height: '60px' }}
-        preserveAspectRatio="none"
-        viewBox="0 0 1440 60"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path 
-          d="M0,30 Q180,10 360,30 T720,30 T1080,30 T1440,30 L1440,60 L0,60 Z" 
-          fill="white"
-        />
-      </svg>
     </div>
   );
 }
