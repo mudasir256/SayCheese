@@ -87,22 +87,28 @@ const Reviews = () => {
 
     return (
         <div className="min-h-screen">
-            <div className="pt-20">
-                <section className="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+            />
+            <div >
+                <section className="py-16 bg-gradient-to-br from-logo-blue/10 via-logo-green/10 via-logo-yellow/5 to-logo-pink/10">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
-                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                                What <span className="bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">Parents Say</span>
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                                <span className="text-logo-blue">What</span>{' '}
+                                <span className="text-logo-green">Parents</span>{' '}
+                                <span className="text-logo-yellow">Say</span>
                             </h1>
-                            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 mt-4">
                                 Don't just take our word for it - hear from the families we've had the privilege to serve
                             </p>
 
-                            <div className="bg-gradient-to-r from-yellow-100 to-orange-100 rounded-2xl p-8 inline-block mb-12">
+                            <div className="bg-gradient-to-r from-logo-yellow/20 to-logo-yellow/30 rounded-2xl p-8 inline-block mb-12 border-2 border-logo-yellow/30">
                                 <div className="flex items-center justify-center mb-4">
                                     <div className="flex">
                                         {[...Array(5)].map((_, i) => (
-                                            <Star key={i} className="h-8 w-8 text-yellow-400 fill-current" />
+                                            <Star key={i} className="h-8 w-8 text-logo-yellow fill-current" />
                                         ))}
                                     </div>
                                 </div>
@@ -111,38 +117,49 @@ const Reviews = () => {
                             </div>
                         </div>
 
-                        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {reviews.map((review, index) => (
-                <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-0 bg-white/90 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex">
-                        {[...Array(review.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <span className="text-sm text-gray-500">{review.date}</span>
-                    </div>
-                    <p className="text-gray-700 mb-4 italic">"{review.text}"</p>
-                    <div className="border-t pt-4">
-                      <p className="font-semibold text-gray-900">{review.name}</p>
-                      <p className="text-sm text-gray-600">Parent of {review.child}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div> */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                            {reviews.map((review, index) => {
+                                const themeColors = [
+                                    'bg-gradient-to-br from-logo-blue/10 to-logo-blue/5 border-logo-blue/30',
+                                    'bg-gradient-to-br from-logo-green/10 to-logo-green/5 border-logo-green/30',
+                                    'bg-gradient-to-br from-logo-yellow/10 to-logo-yellow/5 border-logo-yellow/30',
+                                    'bg-gradient-to-br from-logo-pink/10 to-logo-pink/5 border-logo-pink/30'
+                                ];
+                                const colorClass = themeColors[index % themeColors.length];
+                                return (
+                                    <div key={index} className={`hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 ${colorClass} backdrop-blur-sm rounded-lg`}>
+                                        <div className="p-6">
+                                            <div className="flex items-center justify-between mb-4">
+                                                <div className="flex">
+                                                    {[...Array(review.rating)].map((_, i) => (
+                                                        <Star key={i} className="h-5 w-5 text-logo-yellow fill-current" />
+                                                    ))}
+                                                </div>
+                                                <span className="text-sm text-gray-500">{review.date}</span>
+                                            </div>
+                                            <p className="text-gray-700 mb-4 italic">"{review.text}"</p>
+                                            <div className="border-t pt-4">
+                                                <p className="font-semibold text-gray-900">{review.name}</p>
+                                                <p className="text-sm text-gray-600">Parent of {review.child}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-green-500 rounded-3xl p-8 md:p-12 text-white text-center">
-                            <h3 className="text-3xl font-bold mb-4">Ready to Join Our Happy Families?</h3>
-                            <p className="text-xl mb-8 opacity-90">
+                        <div className="border-2 border-logo-blue/30 bg-gradient-to-br from-logo-blue/10 via-logo-green/10 to-logo-yellow/10 backdrop-blur-sm shadow-lg rounded-3xl p-8 md:p-12 text-center">
+                            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                                <span className="text-logo-blue">Ready to Join Our</span> <span className="text-logo-green">Happy Families?</span>
+                            </h3>
+                            <p className="text-xl mb-8 text-gray-600">
                                 Call us today at (909) 479-6030 and see why families love Say Cheese Kids!
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    {/* <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                    Call (909) 479-6030
-                  </Button> */}
+                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
+                                        Call (909) 479-6030
+                                    </button>
                                 </a>
                             </div>
                         </div>

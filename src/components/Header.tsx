@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ChevronDown } from 'lucide-react';
 
 interface NavLinkProps {
   href: string;
@@ -20,7 +21,7 @@ function NavLink({ href, label, onClick, className = '' }: NavLinkProps) {
     <Link
       href={href}
       onClick={onClick}
-      className={`px-4 xl:px-6 py-2 rounded-md font-medium transition-colors text-sm  ${isActive ? 'bg-[#5BB4D9] text-white' : 'text-black'
+      className={`px-4 xl:px-6 py-2 rounded-md font-medium transition-all duration-200 text-sm  ${isActive ? 'bg-logo-blue text-white' : 'text-black hover:bg-logo-blue/10 hover:text-logo-blue'
         } ${className}`}
     >
       {label}
@@ -29,22 +30,48 @@ function NavLink({ href, label, onClick, className = '' }: NavLinkProps) {
 }
 
 export default function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
+  const serviceDropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const serviceItems = [
+    { href: '/service', label: 'All Service' },
+    { href: '/service/orthodontics', label: 'Orthodontics' },
+    { href: '/service/sedation-dentistry', label: 'Sedation Dentistry' },
+    { href: '/service/special-needs-care', label: 'Special Needs Care' },
+  ];
+
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/service', label: 'Service' },
+    { href: '/service', label: 'Service', hasDropdown: true },
     { href: '/insurance', label: 'Insurance' },
     { href: '/blogs', label: 'Blog' },
     { href: '/faq', label: 'FAQ' },
     { href: '/reviews', label: 'Reviews' },
     { href: '/contact', label: 'Contact' },
   ];
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (serviceDropdownRef.current && !serviceDropdownRef.current.contains(event.target as Node)) {
+        setIsServiceDropdownOpen(false);
+      }
+    };
+
+    if (isServiceDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isServiceDropdownOpen]);
 
   return (
     <header className="w-full bg-white">
@@ -72,9 +99,10 @@ export default function Header() {
             </div>
 
             <div className="hidden lg:flex items-center justify-center flex-1 h-20">
-              <div className="flex items-center justify-centergap-2">
+              <div className="flex items-center justify-center gap-2">
                 {navLinks.map((link, index) => {
                   const middleIndex = Math.floor(navLinks.length / 2);
+                  const isService = link.href === '/service' && (link as any).hasDropdown;
 
                   return (
                     <React.Fragment key={link.href}>
@@ -89,7 +117,42 @@ export default function Header() {
                           />
                         </div>
                       )}
-                      <NavLink href={link.href} label={link.label} />
+                      {isService ? (
+                        <div
+                          ref={serviceDropdownRef}
+                          className="relative"
+                        >
+                          <button
+                            onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
+                            className={`px-4 xl:px-6 py-2 rounded-md font-medium transition-colors text-sm flex items-center gap-1 ${pathname === link.href || pathname?.startsWith('/service')
+                              ? 'bg-logo-blue text-white'
+                              : 'text-black hover:bg-gray-100 hover:text-logo-blue'
+                              }`}
+                          >
+                            {link.label}
+                            <ChevronDown className={`h-4 w-4 transition-transform ${isServiceDropdownOpen ? 'rotate-180' : ''}`} />
+                          </button>
+                          {isServiceDropdownOpen && (
+                            <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-logo-blue/30 overflow-hidden z-50">
+                              {serviceItems.map((item) => (
+                                <Link
+                                  key={item.href}
+                                  href={item.href}
+                                  onClick={() => setIsServiceDropdownOpen(false)}
+                                  className={`block px-4 py-3 text-sm font-medium transition-all duration-200 ${pathname === item.href
+                                    ? 'bg-logo-blue text-white'
+                                    : 'text-gray-700 hover:bg-logo-blue/10 hover:text-logo-blue hover:pl-6'
+                                    }`}
+                                >
+                                  {item.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <NavLink href={link.href} label={link.label} />
+                      )}
                     </React.Fragment>
                   );
                 })}
@@ -131,19 +194,57 @@ export default function Header() {
           </div>
 
           <div
-            className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+            className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
               }`}
           >
             <div className="py-4 space-y-2 border-t border-gray-200">
-              {navLinks.map((link) => (
-                <NavLink
-                  key={link.href}
-                  href={link.href}
-                  label={link.label}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 hover:bg-gray-100"
-                />
-              ))}
+              {navLinks.map((link) => {
+                const isService = link.href === '/service' && (link as any).hasDropdown;
+
+                if (isService) {
+                  return (
+                    <div key={link.href} className="border-b border-gray-200">
+                      <button
+                        onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
+                        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-100 transition-colors"
+                      >
+                        <span className="font-medium text-sm">{link.label}</span>
+                        <ChevronDown className={`h-4 w-4 transition-transform ${isServiceDropdownOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      {isServiceDropdownOpen && (
+                        <div className="bg-gray-50">
+                          {serviceItems.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              onClick={() => {
+                                setIsMenuOpen(false);
+                                setIsServiceDropdownOpen(false);
+                              }}
+                              className={`block px-8 py-2 text-sm transition-all duration-200 ${pathname === item.href
+                                ? 'bg-logo-blue text-white'
+                                : 'text-gray-700 hover:bg-logo-blue/10 hover:text-logo-blue hover:pl-10'
+                                }`}
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                return (
+                  <NavLink
+                    key={link.href}
+                    href={link.href}
+                    label={link.label}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block px-4 py-3 hover:bg-logo-blue/10 hover:text-logo-blue"
+                  />
+                );
+              })}
 
               <div className="pt-4 space-y-2 border-t border-gray-200 mt-2">
                 <Link
