@@ -4,15 +4,14 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className="w-full relative overflow-visible min-h-screen"
-    style={{
-      backgroundImage: 'url(/Images/bgsaycheese.png)',
-      backgroundSize: '105% auto',
-      backgroundPosition: 'bottom center',
-      backgroundRepeat: 'no-repeat',
-    }}
+    <div className="w-full"
+      style={{
+        backgroundImage: 'url(/Images/bgsaycheese.png)',
+        backgroundSize: '100% 100%',
+      }}
     >
-      <div className="relative min-h-[85vh] flex flex-col items-center justify-center">
+      <div className="relative   flex flex-col items-center justify-center">
+        {/* All your existing SVG and button code remains here, unchanged */}
         <div className="absolute top-6 left-8 z-10">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#FFD700" strokeWidth="2" />
@@ -43,34 +42,25 @@ export default function HeroSection() {
           </svg>
         </div>
 
-        <button className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/60 hover:bg-white/80 rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-all">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 18L9 12L15 6" stroke="#7DBBE6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
-        <button className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/60 hover:bg-white/80 rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-all">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18L15 12L9 6" stroke="#7DBBE6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </button>
 
-        <div className="text-center ">
-          <h1 className="text-white text-[10px] md:text-xs font-semibold mb-1 tracking-[0.25em]">
+
+        <div className="text-center pt-12 sm:pt-16 md:pt-20 lg:pt-24">
+          <h1 className="text-white text-[8px] sm:text-[10px] md:text-xs font-semibold mb-1 tracking-[0.25em]">
             CHINO&apos;S TRUSTED KIDS
           </h1>
-          <h2 className="text-white text-5xl md:text-6xl  font-black tracking-tight leading-none mb-2">
+          <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-2">
             DENTIST &<br />ORTHODONTICS
           </h2>
 
-          <p className="text-white text-xs md:text-sm font-normal">
+          <p className="text-white text-[10px] sm:text-xs md:text-sm font-normal">
             #1 Children&apos;s Dentist in Chino, California
           </p>
         </div>
 
-        <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center ">
-          <div className="absolute left-[5%] md:left-[8%] lg:left-[12%] bottom-0 w-60 md:w-68 lg:w-80 z-20">
+        <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center py-8 ">
+          <div className="absolute left-[calc(58%-36vw-2%)] md:left-[calc(58%-36vw-2%)] lg:left-[calc(58%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[20vw] z-20">
             <Image
-              src="/Images/superman girl.svg"
+              src="/Images/superman girl.png"
               alt="Princess Character"
               width={320}
               height={550}
@@ -79,19 +69,29 @@ export default function HeroSection() {
             />
           </div>
 
-            <div className="w-full max-w-lg -translate-y-2">
-              <Image
-                src="/Images/teeths.svg"
-                alt="Teeth with Braces"
-                width={500}
-                height={200}
-                className="w-full h-auto object-contain"
-                priority
-              />
-            </div>
-          <div className="absolute right-[5%] md:right-[8%] lg:right-[8%] bottom-0 w-60 md:w-68 lg:w-80 z-20">
+          <div className="relative z-10">
             <Image
-              src="/Images/superman kid (1).svg"
+              src="/Images/teeths.png"
+              alt="Teeth with Braces"
+              width={500}
+              height={200}
+              className="w-[32vw] mx-auto h-auto  -translate-y-8"
+              priority
+            />
+            <div className="w-full lg:max-w-2xl lg:-translate-y-12">
+              <h3 className="text-white text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold tracking-wide">
+                GENTLE, FUN DENTAL CARE
+                <br />
+                FOR CHILDREN & TEENS
+              </h3>
+              <p className="text-white text-center text-xs sm:text-sm md:text-base mt-2 px-4 leading-relaxed">
+                At Say Cheese Kids Dental & Orthodontics, we specialize in creating positive dental experiences for children of all ages. Our experienced dentist, Dr. Joshua Kohan, provides comprehensive dental care including routine cleanings, kids braces through our orthodontic partners, emergency dental treatment, and comprehensive children&apos;s dental services in a comfortable, child-friendly environment.
+              </p>
+            </div>
+          </div>
+          <div className="absolute right-[calc(55%-36vw-2%)] md:right-[calc(55%-36vw-2%)] lg:right-[calc(55%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[20vw] z-20">
+            <Image
+              src="/Images/superman kid.png"
               alt="Superhero Boy Character"
               width={320}
               height={480}
@@ -100,7 +100,13 @@ export default function HeroSection() {
             />
           </div>
         </div>
+
+        <div className="w-full flex justify-center  -mt-6">
+          <button className="bg-white text-[#7DBBE6] px-4 py-2 rounded-full font-bold text-lg md:text-xl hover:bg-[#7DBBE6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+            Book Appointment
+          </button>
         </div>
+      </div>
     </div>
   );
 }
