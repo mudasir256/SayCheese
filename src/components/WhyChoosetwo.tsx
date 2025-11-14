@@ -30,8 +30,8 @@ export default function WhyChoosetwo() {
         {/* Right Section - Informational Blocks */}
         <div className="order-1 lg:order-2 bg-amber-50 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 pt-8 lg:pt-12 pb-8 lg:pb-12 lg:flex-1">
           {/* Block 1: Experienced Children's Dentist */}
-          <div className="pr-8">
-            <div className="flex justify-left mb-4">
+          <div className="pr-0 lg:pr-8">
+            <div className="flex justify-center lg:justify-start mb-4">
               <svg width="60" height="60" viewBox="0 0 60 60">
                 <circle cx="30" cy="30" r="30" fill="#ffffff" />
                 <path d="M18 12 Q12 18 12 30 Q12 42 18 48 L24 42 Q20 36 20 30 Q20 24 24 18 Z" fill="#87ceeb" opacity="0.7" />
@@ -40,18 +40,18 @@ export default function WhyChoosetwo() {
                 <circle cx="30" cy="31" r="2" fill="#ff6b6b" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
+            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
               Experienced Children&apos;s<br />Dentist
             </h3>
-            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#e8a5a5' }}></div>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#e8a5a5' }}></div>
+            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
               Dr. Joshua Kohan has 5+ years of experience treating children, with extensive training in child development, behavior management, and the unique dental needs of growing children.
             </p>
           </div>
 
           {/* Block 2: Advanced Technology & Techniques */}
-          <div className="pr-8">
-            <div className="flex justify-left mb-4">
+          <div className="pr-0 lg:pr-8">
+            <div className="flex justify-center lg:justify-start mb-4">
               <svg width="60" height="60" viewBox="0 0 60 60">
                 <circle cx="30" cy="30" r="30" fill="#ffffff" />
                 <circle cx="30" cy="30" r="20" fill="none" stroke="#87ceeb" strokeWidth="2" />
@@ -62,18 +62,18 @@ export default function WhyChoosetwo() {
                 <circle cx="42" cy="30" r="2" fill="#4a9eff" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
+            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
               Advanced Technology<br />& Techniques
             </h3>
-            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#ffd966' }}></div>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#ffd966' }}></div>
+            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
               We use the latest dental technology and minimally invasive techniques to provide the most comfortable and effective treatment for children, including digital X-rays and gentle procedures.
             </p>
           </div>
 
           {/* Block 3: Child-Friendly Environment */}
-          <div className="pr-8">
-            <div className="flex justify-left mb-4">
+          <div className="pr-0 lg:pr-8">
+            <div className="flex justify-center lg:justify-start mb-4">
               <svg width="60" height="60" viewBox="0 0 60 60">
                 <circle cx="30" cy="30" r="30" fill="#ffffff" />
                 <rect x="12" y="18" width="36" height="24" rx="4" fill="#ffb6c1" opacity="0.7" />
@@ -82,18 +82,18 @@ export default function WhyChoosetwo() {
                 <circle cx="36" cy="33" r="4" fill="#ff6b6b" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
+            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
               Child-Friendly<br />Environment
             </h3>
-            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#87ceeb' }}></div>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#87ceeb' }}></div>
+            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
               Our Chino dental office is designed specifically for children, featuring bright colors, entertaining distractions, and a welcoming atmosphere that helps kids feel comfortable and excited about their dental visits.
             </p>
           </div>
 
           {/* Block 4: Comprehensive Care Network */}
-          <div className="pr-8">
-            <div className="flex justify-left mb-4">
+          <div className="pr-0 lg:pr-8">
+            <div className="flex justify-center lg:justify-start mb-4">
               <svg width="60" height="60" viewBox="0 0 60 60">
                 <circle cx="30" cy="30" r="30" fill="#ffffff" />
                 <circle cx="24" cy="22" r="7" fill="#ffd966" />
@@ -102,11 +102,11 @@ export default function WhyChoosetwo() {
                 <path d="M40 30 Q35 32 35 38 L35 46 L45 46 L45 38 Q45 32 40 30 Z" fill="#e8a5a5" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
+            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
               Comprehensive Care<br />Network
             </h3>
-            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#ffd966' }}></div>
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#ffd966' }}></div>
+            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
               From your child&apos;s first tooth to their teenage years, we provide comprehensive dental care including preventive treatments, restorative work, and coordinate with orthodontists for specialized care all under one roof.
             </p>
           </div>

@@ -42,8 +42,8 @@ export default function ChildrensDentalPractice() {
                     {/* Left Column - Features in 2x2 Grid */}
                     <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Feature 1 - Specialized Children's Dental Care */}
-                        <div className="pr-8">
-                            <div className="flex justify-left mb-4">
+                        <div className="pr-0 lg:pr-8">
+                            <div className="flex justify-center lg:justify-start mb-4">
                                 <svg width="60" height="60" viewBox="0 0 60 60">
                                     <circle cx="30" cy="30" r="30" fill="#ffffff" />
                                     <path d="M18 12 Q12 18 12 30 Q12 42 18 48 L24 42 Q20 36 20 30 Q20 24 24 18 Z" fill="#87ceeb" opacity="0.7" />
@@ -52,18 +52,18 @@ export default function ChildrensDentalPractice() {
                                     <circle cx="30" cy="31" r="2" fill="#ff6b6b" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
                                 Specialized Children's<br />Dental Care
                             </h3>
-                            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#e8a5a5' }}></div>
-                            <p className="text-gray-700 text-sm leading-relaxed">
+                            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#e8a5a5' }}></div>
+                            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
                                 Our dentist understands the unique needs of growing smiles. We provide gentle, age-appropriate dental care that helps children develop healthy oral hygiene habits for life.
                             </p>
                         </div>
 
                         {/* Feature 2 - Expert Kids Braces & Orthodontics */}
-                        <div className="pr-8">
-                            <div className="flex justify-left mb-4">
+                        <div className="pr-0 lg:pr-8">
+                            <div className="flex justify-center lg:justify-start mb-4">
                                 <svg width="60" height="60" viewBox="0 0 60 60">
                                     <circle cx="30" cy="30" r="30" fill="#ffffff" />
                                     <circle cx="30" cy="30" r="20" fill="none" stroke="#87ceeb" strokeWidth="2" />
@@ -74,18 +74,18 @@ export default function ChildrensDentalPractice() {
                                     <circle cx="42" cy="30" r="2" fill="#4a9eff" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
                                 Expert Kids Braces<br />& Orthodontics
                             </h3>
-                            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#ffd966' }}></div>
-                            <p className="text-gray-700 text-sm leading-relaxed">
+                            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#ffd966' }}></div>
+                            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
                                 From traditional metal braces to clear aligners, we partner with experienced orthodontists to offer comprehensive orthodontic solutions designed specifically for children and teenagers in Chino and surrounding areas.
                             </p>
                         </div>
 
                         {/* Feature 3 - Emergency Children's Dental Care */}
-                        <div className="pr-8">
-                            <div className="flex justify-left mb-4">
+                        <div className="pr-0 lg:pr-8">
+                            <div className="flex justify-center lg:justify-start mb-4">
                                 <svg width="60" height="60" viewBox="0 0 60 60">
                                     <circle cx="30" cy="30" r="30" fill="#ffffff" />
                                     <rect x="12" y="18" width="36" height="24" rx="4" fill="#ffb6c1" opacity="0.7" />
@@ -94,18 +94,18 @@ export default function ChildrensDentalPractice() {
                                     <circle cx="36" cy="33" r="4" fill="#ff6b6b" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
                                 Emergency Children's<br />Dental Care
                             </h3>
-                            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#87ceeb' }}></div>
-                            <p className="text-gray-700 text-sm leading-relaxed">
+                            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#87ceeb' }}></div>
+                            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
                                 Dental emergencies can happen anytime. Our team provides prompt, compassionate emergency dental care for children, including after-hours consultations when possible.
                             </p>
                         </div>
 
                         {/* Feature 4 - Family-Friendly Dental Office */}
-                        <div className="pr-8">
-                            <div className="flex justify-left mb-4">
+                        <div className="pr-0 lg:pr-8">
+                            <div className="flex justify-center lg:justify-start mb-4">
                                 <svg width="60" height="60" viewBox="0 0 60 60">
                                     <circle cx="30" cy="30" r="30" fill="#ffffff" />
                                     <circle cx="24" cy="22" r="7" fill="#ffd966" />
@@ -114,11 +114,11 @@ export default function ChildrensDentalPractice() {
                                     <path d="M40 30 Q35 32 35 38 L35 46 L45 46 L45 38 Q45 32 40 30 Z" fill="#e8a5a5" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">
+                            <h3 className="text-xl font-bold text-gray-800 mb-2 text-center lg:text-left">
                                 Family-Friendly<br />Dental Office
                             </h3>
-                            <div className="w-16 h-1 mb-3" style={{ backgroundColor: '#ffd966' }}></div>
-                            <p className="text-gray-700 text-sm leading-relaxed">
+                            <div className="w-16 h-1 mb-3 mx-auto lg:mx-0" style={{ backgroundColor: '#ffd966' }}></div>
+                            <p className="text-gray-700 text-sm leading-relaxed text-center lg:text-left">
                                 Located conveniently in Chino, our modern dental office is designed with children in mind, featuring a fun, welcoming atmosphere that helps reduce dental anxiety.
                             </p>
                         </div>

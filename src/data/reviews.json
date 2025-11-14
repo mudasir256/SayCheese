@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "text": "Dr. Kohan and the team at Say Cheese Kids made Emma's first dental visit so comfortable. She actually looks forward to going now! The office is bright and cheerful, and they explain everything in kid-friendly terms.",
+    "author": "Sarah Johnson",
+    "childName": "Emma",
+    "childAge": 8,
+    "icon": "doctor"
+  },
+  {
+    "id": 2,
+    "text": "My son was terrified of the dentist, but the team here made him feel so at ease. They're patient, kind, and really know how to work with kids. Highly recommend!",
+    "author": "Michael Chen",
+    "childName": "Lucas",
+    "childAge": 6,
+    "icon": "doctor"
+  },
+  {
+    "id": 3,
+    "text": "We've been coming here for two years and couldn't be happier. The staff is amazing with children, and the office environment is perfect for kids. My daughter loves her checkups!",
+    "author": "Jennifer Martinez",
+    "childName": "Sophia",
+    "childAge": 10,
+    "icon": "doctor"
+  },
+  {
+    "id": 4,
+    "text": "The orthodontic care here is excellent. They explained everything clearly and made sure my son understood each step. The braces process was smooth and stress-free.",
+    "author": "David Thompson",
+    "childName": "James",
+    "childAge": 12,
+    "icon": "doctor"
+  },
+  {
+    "id": 5,
+    "text": "As a parent, I appreciate how they take time to answer all my questions. The dental care is top-notch, and my kids actually enjoy their visits. What more could you ask for?",
+    "author": "Amanda Wilson",
+    "childName": "Olivia",
+    "childAge": 7,
+    "icon": "doctor"
+  }
+]
+

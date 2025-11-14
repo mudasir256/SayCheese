@@ -127,7 +127,7 @@ export default function Comprehensive() {
     <div className="w-full bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-6 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Comprehensive Children&apos;s Dental Services
             </h2>
@@ -135,10 +135,10 @@ export default function Comprehensive() {
               Our experienced dentist, Dr. Joshua Kohan, provides comprehensive dental care tailored specifically for children and teens. From routine cleanings to partnering with orthodontists for kids braces, we make every visit comfortable and educational for your child.
             </p>
           
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-             <Image src="/Images/doctor.png" alt="Doctor" width={64} height={64} />
+                 <Image src="/Images/doctor.png" alt="Doctor" width={64} height={64} />
                 </div>
               </div>
               <div>

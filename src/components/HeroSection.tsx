@@ -11,7 +11,6 @@ export default function HeroSection() {
       }}
     >
       <div className="relative   flex flex-col items-center justify-center">
-        {/* All your existing SVG and button code remains here, unchanged */}
         <div className="absolute top-6 left-8 z-10">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#FFD700" strokeWidth="2" />
@@ -57,8 +56,9 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center py-8 ">
-          <div className="absolute left-[calc(58%-36vw-2%)] md:left-[calc(58%-36vw-2%)] lg:left-[calc(58%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[20vw] z-20">
+        <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center py-4 md:py-8">
+          {/* Left Character - Princess */}
+          <div className="absolute left-[10%] md:left-[calc(58%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[15vw] md:w-[20vw] z-20">
             <Image
               src="/Images/superman girl.png"
               alt="Princess Character"
@@ -69,27 +69,35 @@ export default function HeroSection() {
             />
           </div>
 
-          <div className="relative z-10">
+          {/* Center Content - Teeth and Text */}
+          <div className="relative z-10 flex flex-col items-center w-full">
             <Image
               src="/Images/teeths.png"
               alt="Teeth with Braces"
               width={500}
               height={200}
-              className="w-[32vw] mx-auto h-auto  -translate-y-8"
+              className="w-[25vw] md:w-[32vw] mx-auto h-auto -translate-y-4 md:-translate-y-8"
               priority
             />
-            <div className="w-full lg:max-w-2xl lg:-translate-y-12">
-              <h3 className="text-white text-center text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold tracking-wide">
+            
+            {/* Text positioned between characters - centered horizontally */}
+            <div className="absolute top-[20%] md:top-[45%] left-1/2 transform -translate-x-1/2 w-[70vw] sm:w-[60vw] md:w-auto max-w-md z-30 px-2">
+              <h3 className="text-white text-center text-[9px] sm:text-[10px] md:text-sm lg:text-base xl:text-lg font-bold tracking-wide leading-tight">
                 GENTLE, FUN DENTAL CARE
                 <br />
                 FOR CHILDREN & TEENS
               </h3>
+            </div>
+            
+            <div className="w-full lg:max-w-2xl mt-1 md:mt-2 lg:-translate-y-2">
               <p className="text-white text-center text-xs sm:text-sm md:text-base mt-2 px-4 leading-relaxed">
                 At Say Cheese Kids Dental & Orthodontics, we specialize in creating positive dental experiences for children of all ages. Our experienced dentist, Dr. Joshua Kohan, provides comprehensive dental care including routine cleanings, kids braces through our orthodontic partners, emergency dental treatment, and comprehensive children&apos;s dental services in a comfortable, child-friendly environment.
               </p>
             </div>
           </div>
-          <div className="absolute right-[calc(55%-36vw-2%)] md:right-[calc(55%-36vw-2%)] lg:right-[calc(55%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[20vw] z-20">
+          
+          {/* Right Character - Superhero */}
+          <div className="absolute right-[10%] md:right-[calc(55%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[15vw] md:w-[20vw] z-20">
             <Image
               src="/Images/superman kid.png"
               alt="Superhero Boy Character"
@@ -102,7 +110,7 @@ export default function HeroSection() {
         </div>
 
         <div className="w-full flex justify-center  -mt-6">
-          <button className="bg-white text-[#7DBBE6] px-4 py-2 rounded-full font-bold text-lg md:text-xl hover:bg-[#7DBBE6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <button className="bg-[#c6577e] text-white px-4 py-2 rounded-full font-bold text-lg md:text-xl hover:bg-[#e57fa3] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Book Appointment
           </button>
         </div>
