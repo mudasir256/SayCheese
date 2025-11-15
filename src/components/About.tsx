@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-bold mb-6 font-bold">
               <span className="text-[#b4d96c] font-bold">About</span>{' '}
               <span className="text-[#f9c151] font-bold">Say</span>{' '}
               <span className="text-[#7DBBE6] font-bold">Ch<span className="text-[#e57fa3] font-bold">ee</span>se</span>
@@ -19,7 +19,7 @@ export default function AboutSection() {
               We provide comprehensive dental care for children in a warm, welcoming environment designed to make every visit a positive experience.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3  md:gap-16 items-start">
             <div className="lg:col-span-1 space-y-8">
               <div className="flex items-start gap-4">
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed pt-2 text-center lg:text-right">
@@ -45,13 +45,13 @@ export default function AboutSection() {
                 </div>
             </div>
             
-            <div className="lg:col-span-1 flex justify-center items-center py-4 relative">
-              <div className="relative w-full max-w-md h-80 md:h-96">
+            <div className="lg:col-span-1 flex -translate-y- lg:-translate-y-12 relative">
+              <div className="relative w-full max-w-md h-82">
                 <Image
                   src="/Images/about.png"
                   alt="Happy children at dental clinic"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   priority
                 />
               </div>

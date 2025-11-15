@@ -121,6 +121,8 @@ export default function Header() {
                         <div
                           ref={serviceDropdownRef}
                           className="relative"
+                          onMouseEnter={() => setIsServiceDropdownOpen(true)}
+                          onMouseLeave={() => setIsServiceDropdownOpen(false)}
                         >
                           <button
                             onClick={() => setIsServiceDropdownOpen(!isServiceDropdownOpen)}
@@ -133,20 +135,22 @@ export default function Header() {
                             <ChevronDown className={`h-4 w-4 transition-transform ${isServiceDropdownOpen ? 'rotate-180' : ''}`} />
                           </button>
                           {isServiceDropdownOpen && (
-                            <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-logo-blue/30 overflow-hidden z-50">
-                              {serviceItems.map((item) => (
-                                <Link
-                                  key={item.href}
-                                  href={item.href}
-                                  onClick={() => setIsServiceDropdownOpen(false)}
-                                  className={`block px-4 py-3 text-sm font-medium transition-all duration-200 ${pathname === item.href
-                                    ? 'bg-logo-blue text-white'
-                                    : 'text-gray-700 hover:bg-logo-blue/10 hover:text-logo-blue hover:pl-6'
-                                    }`}
-                                >
-                                  {item.label}
-                                </Link>
-                              ))}
+                            <div className="absolute top-full left-0 pt-2 w-56 z-50">
+                              <div className="bg-white rounded-lg shadow-xl border-2 border-logo-blue/30 overflow-hidden">
+                                {serviceItems.map((item) => (
+                                  <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    onClick={() => setIsServiceDropdownOpen(false)}
+                                    className={`block px-4 py-3 text-sm font-medium transition-all duration-200 ${pathname === item.href
+                                      ? 'bg-logo-blue text-white'
+                                      : 'text-gray-700 hover:bg-logo-blue/10 hover:text-logo-blue hover:pl-6'
+                                      }`}
+                                  >
+                                    {item.label}
+                                  </Link>
+                                ))}
+                              </div>
                             </div>
                           )}
                         </div>

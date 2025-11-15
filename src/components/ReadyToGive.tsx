@@ -12,9 +12,10 @@ export default function ReadyToGive() {
           <div className="flex flex-col lg:flex-row items-center justify-between w-full max-lg:gap-6">
 
             <div className="text-white space-y-4 md:space-y-6 bottom-10 max-lg:bottom-0 relative text-center max-lg:order-2">
-              <h2 className="text-xl  font-bold leading-tight px-2 sm:px-0">
-                READY TO GIVE YOUR CHILD THE{' '}
-                <span className="block sm:inline">BEST DENTAL CARE IN CHINO?</span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight px-2 sm:px-0">
+                READY TO GIVE YOUR CHILD 
+                <br  className='hidden lg:block'/>
+               THE BEST DENTAL CARE IN CHINO?
               </h2>
               <p className="text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
                 Call us at <span className="font-semibold">(909) 479-6030</span> and see why families throughout Chino, Chino Hills, and the Inland Empire trust Say Cheese Kids with their children&apos;s smiles.

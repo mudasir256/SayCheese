@@ -9,14 +9,14 @@ import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <HeroSection />
       <WhyChoose />
-      <AboutSection/>
-      <Comprehensive/>
-      <WhyChoosetwo/>
-      <ReadyToGive/>
-      <Reviews/>
+      <AboutSection />
+      <Comprehensive />
+      <WhyChoosetwo />
+      <ReadyToGive />
+      <Reviews />
     </main>
   );
 }

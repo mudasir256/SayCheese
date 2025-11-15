@@ -25,15 +25,15 @@ export default function ChildrensDentalPractice() {
 
     return (
         <div className="min-h-screen" style={{ backgroundColor: '#f4f3ef' }}>
-            <div className="  px-4 sm:px-6 lg:px-16 py-12">
+            <div className="   px-4 sm:px-6 lg:px-16 py-12">
                 {/* Header */}
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-2" style={{ color: '#a4b55f' }}>
-                        WHY CHOOSE OUR CHILDREN'S
-                    </h1>
-                    <h1 className="text-4xl md:text-5xl font-bold" style={{ color: '#a4b55f' }}>
+                <div className=" text-center mb-16">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-2" style={{ color: '#a4b55f' }}>
+                        WHY CHOOSE OUR CHILDREN'S {''}
+                        <br  className='hidden lg:block'/>
                         DENTAL PRACTICE IN CHINO?
                     </h1>
+                   
 
                 </div>
 
@@ -126,7 +126,7 @@ export default function ChildrensDentalPractice() {
 
                     {/* Right Column - Appointment Form */}
                     <div className="w-full lg:w-[500px] flex-shrink-0">
-                        <div className="bg-amber-50 rounded-[50px] p-8 shadow-lg h-fit">
+                        <div className="bg-[#f7ecd5] rounded-[50px] p-8 shadow-lg h-fit">
                             <h2 className="text-xl font-bold text-gray-800 mb-1 text-center leading-tight">
                                 SCHEDULE YOUR CHILD'S
                             </h2>

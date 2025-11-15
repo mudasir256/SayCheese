@@ -124,11 +124,11 @@ export default function Comprehensive() {
   const currentCard = dentalServices[currentIndex];
 
   return (
-    <div className="w-full bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-white pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
           <div className="lg:col-span-1 space-y-6 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
               Comprehensive Children&apos;s Dental Services
             </h2>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">

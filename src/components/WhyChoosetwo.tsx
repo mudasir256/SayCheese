@@ -4,24 +4,25 @@ import Image from 'next/image';
 
 export default function WhyChoosetwo() {
   return (
-    <div className="w-full relative overflow-visible bg-amber-50 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <div className="w-full relative overflow-visible bg-amber-50 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-pink-500 mb-8 md:mb-12 text-center ">
-          WHY CHOOSE SAY CHEESE KIDS FOR YOUR CHILD&apos;S DENTAL CARE IN CHINO?
+          WHY CHOOSE SAY CHEESE KIDS FOR YOUR 
+          <br  className='hidden lg:block'/>
+          CHILD&apos;S DENTAL CARE IN CHINO?
         </h2>
       </div>
 
       {/* Main Content Grid */}
       <div className="flex flex-col lg:flex-row w-full gap-6 lg:gap-8 xl:gap-12 items-start">
         {/* Left Section - Full Width Image (touches edges) */}
-        <div className="order-2 lg:order-1 w-full lg:w-1/3 xl:w-[35%] relative -mx-4 sm:-mx-6 md:mx-0 md:px-4 lg:mx-0 lg:-mr-4 xl:-mr-6 pt-8 lg:pt-12">
-          <div className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[500px] xl:h-[550px]">
+        <div className="order-2 lg:order-1 w-full lg:w-1/3 xl:w-[35%] relative flex justify-center sm:-mx-6 md:mx-0 md:px-4 lg:justify-start lg:-ml-8 lg:mr-0 lg:px-0 pt-8 lg:pt-12">
+          <div className="relative w-[300px] h-[300px] sm:w-full  sm:h-[380px] md:h-[450px] lg:h-[550px]">
             <Image
-              src="/Images/whychoose.png"
+              src="/Images/whyChoose.png"
               alt="Dentist examining child's dental X-ray"
               fill
-              className="object-cover rounded-lg lg:rounded-none"
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 30vw"
+              className=" object-cover rounded-xl lg:rounded-none"
               priority
             />
           </div>
