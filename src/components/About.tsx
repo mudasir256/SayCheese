@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Button from './Button';
 
 export default function AboutSection() {
   return (
@@ -28,12 +29,18 @@ export default function AboutSection() {
               </div>
               
               <div className="flex flex-col gap-4 mt-6 items-center lg:items-end">
-                <button className="px-6 py-3 bg-[#b4d96c] hover:bg-[#b4d96c] text-white rounded-full text-base font-semibold transition-colors shadow-sm w-fit">
-                  Children&apos;s Dentistry
-                </button>
-                <button className="px-6 py-3 bg-[#f9c151] hover:bg-[#f9c151] text-white rounded-full text-base font-semibold transition-colors shadow-sm w-fit">
-                  Orthodontics Available
-                </button>
+                <Button
+                  text="Children's Dentistry"
+                  backgroundColor="#b4d96c"
+                  size="md"
+                  rounded="full"
+                />
+                <Button
+                  text="Orthodontics Available"
+                  backgroundColor="#f9c151"
+                  size="md"
+                  rounded="full"
+                />
               </div>
               <div className="flex-shrink-0 mt-20 hidden lg:block">
                   <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,12 +70,18 @@ export default function AboutSection() {
               </p>
               
               <div className="flex flex-col gap-4 mt-6 items-center lg:items-start">
-                <button className="px-6 py-3 bg-[#7DBBE6] hover:bg-[#7DBBE6] text-white rounded-full text-base font-semibold transition-colors shadow-sm w-fit">
-                  After-Hours Care
-                </button>
-                <button className="px-6 py-3 bg-[#e57fa3] hover:bg-[#e57fa3] text-white rounded-full text-base font-semibold transition-colors shadow-sm w-fit">
-                  Comfortable
-                </button>
+                <Button
+                  text="After-Hours Care"
+                  backgroundColor="#7DBBE6"
+                  size="md"
+                  rounded="full"
+                />
+                <Button
+                  text="Comfortable"
+                  backgroundColor="#e57fa3"
+                  size="md"
+                  rounded="full"
+                />
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import blogPosts from "@/data/blogPosts.json";
+import Button from "@/components/Button";
 
 const Blog = () => {
 
@@ -73,10 +74,12 @@ const Blog = () => {
                           <span className="text-sm text-gray-600">{post.author}</span>
                         </div>
                         <Link href={`/blogs/${post.slug}`}>
-                          <button className="group flex items-center gap-1 border-2 border-logo-blue text-logo-blue hover:bg-logo-blue hover:text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">
-                            Read More
-                            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                          </button>
+                          <Button
+                            text="Read More"
+                            variant="outline"
+                            size="sm"
+                            rounded="lg"
+                          />
                         </Link>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -109,9 +112,12 @@ const Blog = () => {
               </p>
               <div className="flex justify-center">
                 <a href="tel:9094796030">
-                  <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
-                    Call (909) 479-6030
-                  </button>
+                  <Button
+                    text="Call (909) 479-6030"
+                    variant="blue"
+                    size="lg"
+                    rounded="lg"
+                  />
                 </a>
               </div>
             </div>

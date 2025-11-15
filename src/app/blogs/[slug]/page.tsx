@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Calendar, Clock, User, ArrowLeft, Phone } from "lucide-react";
 import blogPosts from "@/data/blogPosts.json";
 import type { Metadata } from "next";
+import Button from "@/components/Button";
 
 interface ContentBlock {
   type: "heading" | "paragraph" | "list";
@@ -228,15 +229,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                 <a href="tel:9094796030">
-                  <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2 w-full sm:w-auto">
-                    <Phone className="h-4 w-4 md:h-5 md:w-5" />
-                    Call (909) 479-6030
-                  </button>
+                  <Button
+                    text="Call (909) 479-6030"
+                    variant="blue"
+                    size="lg"
+                    rounded="lg"
+                  />
                 </a>
                 <Link href="/contact">
-                  <button className="border-2 border-logo-blue text-logo-blue hover:bg-logo-blue/10 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-all w-full sm:w-auto">
-                    Schedule Appointment
-                  </button>
+                  <Button
+                    text="Schedule Appointment"
+                    variant="outline"
+                    size="lg"
+                    rounded="lg"
+                  />
                 </Link>
               </div>
             </div>

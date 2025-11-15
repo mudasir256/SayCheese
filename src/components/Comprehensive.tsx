@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import Button from './Button';
 
 const dentalServices = [
   {
@@ -199,9 +200,14 @@ export default function Comprehensive() {
                         ))}
                       </ul>
 
-                      <button className={`w-full ${card.buttonBg} ${card.buttonHover} text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors shadow-md`}>
-                        Learn More
-                      </button>
+                      <Button
+                        text="Learn More"
+                        backgroundColor={card.id === 1 ? '#fbbf24' : card.id === 2 ? '#b4d96c' : card.id === 3 ? '#93c5fd' : '#c084fc'}
+                        textColor="text-gray-800"
+                        size="md"
+                        rounded="lg"
+                        fullWidth={true}
+                      />
                     </div>
                   </div>
                 ))}
@@ -239,9 +245,14 @@ export default function Comprehensive() {
                     ))}
                   </ul>
 
-                  <button className={`w-full ${card.buttonBg} ${card.buttonHover} text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors shadow-md`}>
-                    Learn More
-                  </button>
+                  <Button
+                    text="Learn More"
+                    backgroundColor={card.id === 1 ? '#fbbf24' : card.id === 2 ? '#b4d96c' : card.id === 3 ? '#93c5fd' : '#c084fc'}
+                    textColor="text-gray-800"
+                    size="md"
+                    rounded="lg"
+                    fullWidth={true}
+                  />
                 </div>
               ))}
             </div>

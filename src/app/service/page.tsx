@@ -1,4 +1,5 @@
 import { Smile, Shield, Zap, Star, CheckCircle, Phone } from "lucide-react";
+import Button from "@/components/Button";
 
 const Services = () => {
     const services = [
@@ -13,7 +14,8 @@ const Services = () => {
                 "Oral hygiene education for kids and parents",
                 "Digital X-rays for comprehensive diagnosis"
             ],
-            checkColor: "text-logo-blue"
+            checkColor: "text-logo-blue",
+            buttonVariant: "blue"
         },
         {
             icon: <Shield className="h-12 w-12 text-logo-green" />,
@@ -26,7 +28,8 @@ const Services = () => {
                 "Space maintainers",
                 "Tooth extractions when necessary"
             ],
-            checkColor: "text-logo-green"
+            checkColor: "text-logo-green",
+            buttonVariant: "green"
         },
         {
             icon: <Zap className="h-12 w-12 text-logo-yellow" />,
@@ -39,7 +42,8 @@ const Services = () => {
                 "Early orthodontic intervention",
                 "Retainer fitting and maintenance"
             ],
-            checkColor: "text-logo-yellow"
+            checkColor: "text-logo-yellow",
+            buttonVariant: "yellow"
         },
         {
             icon: <Star className="h-12 w-12 text-logo-pink" />,
@@ -52,7 +56,8 @@ const Services = () => {
                 "Abscess treatment",
                 "After-hours emergency consultations"
             ],
-            checkColor: "text-logo-pink"
+            checkColor: "text-logo-pink",
+            buttonVariant: "pink"
         }
     ];
 
@@ -108,10 +113,13 @@ const Services = () => {
                                             ))}
                                         </ul>
                                         <a href="tel:9094796030" className="block w-full">
-                                            <button className="w-full bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                                                <Phone className="h-4 w-4" />
-                                                Call (909) 479-6030
-                                            </button>
+                                            <Button
+                                                text="Call (909) 479-6030"
+                                                variant={service.buttonVariant as "blue" | "green" | "yellow" | "pink" | "outline"}
+                                                size="md"
+                                                rounded="lg"
+                                                fullWidth={true}
+                                            />
                                         </a>
                                     </div>
                                 </div>
@@ -127,10 +135,12 @@ const Services = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="blue"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>

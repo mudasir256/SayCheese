@@ -1,5 +1,6 @@
 import { Heart, Shield, Smile, Users, Phone, Star } from "lucide-react";
 import Link from "next/link";
+import Button from "./Button";
 
 const SpecialNeeds = () => {
     return (
@@ -44,10 +45,12 @@ const SpecialNeeds = () => {
                                 </p>
 
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="green"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -77,9 +80,12 @@ const SpecialNeeds = () => {
 
                             <div className="text-center mt-6">
                                 <Link href="/reviews">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl">
-                                        Read More Reviews →
-                                    </button>
+                                    <Button
+                                        text="Read More Reviews →"
+                                        variant="blue"
+                                        size="md"
+                                        rounded="lg"
+                                    />
                                 </Link>
                             </div>
                         </div>

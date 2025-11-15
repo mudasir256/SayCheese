@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import Button from './Button';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -79,7 +81,7 @@ export default function HeroSection() {
               className="w-[50vw] sm:w-[50vw] md:w-[52vw] lg:w-[42vw]  xl:w-[41vw] 2xl:w-[43vw] h-auto -translate-y-2 sm:-translate-y-8 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-16 2xl:-translate-y-20"
               priority
             />
-            
+
             {/* Text positioned between characters - centered horizontally */}
             <div className="  -translate-y-6 md:-translate-y-16 lg:-translate-y-16  xl:-translate-y-24 left-1/2 transform  w-[70vw] sm:w-[60vw] md:w-auto max-w-md z-30 px-2">
               <h3 className="text-white text-center text-[15px] sm:text-[10px] md:text-sm lg:text-base xl:text-3xl font-bold tracking-wide leading-tight">
@@ -88,14 +90,14 @@ export default function HeroSection() {
                 FOR CHILDREN & TEENS
               </h3>
             </div>
-            
+
             <div className="w-full lg:max-w-2xl  -translate-y-6 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-24">
               <p className="text-white text-center text-xs sm:text-sm md:text-base mt-2 px-4 leading-relaxed">
-              Say Cheese Kids Dental & Orthodontics offers child-friendly dental care, including cleanings, braces, emergency treatments, and full pediatric services by Dr. Joshua Kohan.
+                Say Cheese Kids Dental & Orthodontics offers child-friendly dental care, including cleanings, braces, emergency treatments, and full pediatric services by Dr. Joshua Kohan.
               </p>
             </div>
           </div>
-          
+
           {/* Right Character - Superhero */}
           <div className="absolute right-[5%] sm:right-[1%] md:right-[1%] lg:right-[7%] xl:right-[8%]  bottom-[60%] sm:bottom-[50%] md:bottom-[54%] lg:bottom-[52%]  xl:bottom-[50%]  w-[22vw] sm:w-[24vw] md:w-[26vw] lg:w-[24vw]  xl:w-[23vw] 2xl:w-[22vw] z-20">
             <Image
@@ -109,10 +111,15 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="w-full flex justify-center  -mt-6">
-          <button className="bg-[#c6577e] text-white px-4 py-2 rounded-full font-bold text-lg md:text-xl hover:bg-[#e57fa3] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-            Book Appointment
-          </button>
+        <div className=" w-full flex justify-center md:-translate-y-3 lg:-translate-y-0 xl:-translate-y-4  -mt-6">
+          <Link href="/appointment">
+            <Button
+              text="Book Appointment"
+              size="responsive"
+              rounded="full"
+              variant="pink"
+            />
+          </Link>
         </div>
       </div>
     </div>

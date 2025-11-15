@@ -1,4 +1,6 @@
 import { Heart, Award, Users, Clock } from "lucide-react";
+import Button from "@/components/Button";
+
 const About = () => {
     const stats = [{
         icon: <Users className="h-8 w-8 text-logo-blue" />,
@@ -97,9 +99,12 @@ const About = () => {
                                 <p className="text-logo-blue font-semibold mt-2">- Dr. Joshua Kohan, D.M.D.</p>
                             </div>
                             <a href="tel:9094796030">
-                                <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
-                                    Call (909) 479-6030
-                                </button>
+                                <Button
+                                    text="Call (909) 479-6030"
+                                    size="lg"
+                                    variant="blue"
+                                    rounded="lg"
+                                />
                             </a>
                         </div>
 

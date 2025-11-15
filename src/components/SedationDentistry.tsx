@@ -1,4 +1,5 @@
 import { Smile, Shield, Heart, CheckCircle, Clock, Star, Phone } from "lucide-react";
+import Button from "./Button";
 
 const SedationDentistry = () => {
     const benefits = ["Reduces anxiety and fear", "Helps children stay still during treatment", "Allows for more comprehensive care", "Creates positive dental experiences", "Safe and monitored by trained professionals"];
@@ -39,10 +40,12 @@ const SedationDentistry = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="pink"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -238,10 +241,12 @@ const SedationDentistry = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="blue"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>

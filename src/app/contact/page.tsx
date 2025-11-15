@@ -1,5 +1,6 @@
 "use client";
 import { Clock, MapPin, Phone, Mail, Navigation as NavigationIcon } from "lucide-react";
+import Button from "@/components/Button";
 
 const Contact = () => {
   const openDirections = () => {
@@ -115,12 +116,14 @@ const Contact = () => {
                     />
                   </div>
 
-                  <button
+                  <Button
+                    text="Request Appointment"
+                    variant="blue"
+                    size="lg"
+                    rounded="lg"
+                    fullWidth={true}
                     type="submit"
-                    className="w-full bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white text-lg py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
-                  >
-                    Request Appointment
-                  </button>
+                  />
                 </form>
               </div>
             </div>

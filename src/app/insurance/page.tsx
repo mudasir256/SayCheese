@@ -1,5 +1,6 @@
 import { Shield, CheckCircle, Heart, Phone } from "lucide-react";
 import Link from "next/link";
+import Button from "@/components/Button";
 
 const Insurance = () => {
     const insurancePlans = [
@@ -73,10 +74,12 @@ const Insurance = () => {
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <a href="tel:9094796030">
-                                        <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl inline-flex items-center">
-                                            <Phone className="h-4 w-4 mr-2" />
-                                            Call Us
-                                        </button>
+                                        <Button
+                                            text="Call Us"
+                                            variant="blue"
+                                            size="md"
+                                            rounded="lg"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -129,10 +132,12 @@ const Insurance = () => {
                                 If you're unsure about your coverage, our friendly team is here to help verify your benefits and answer any questions you may have.
                             </p>
                             <a href="tel:9094796030">
-                                <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl inline-flex items-center">
-                                    <Phone className="h-5 w-5 mr-2" />
-                                    Contact Us About Your Plan
-                                </button>
+                                <Button
+                                    text="Contact Us About Your Plan"
+                                    variant="blue"
+                                    size="lg"
+                                    rounded="lg"
+                                />
                             </a>
                         </div>
                     </div>
@@ -156,14 +161,20 @@ const Insurance = () => {
                             <div className="text-center">
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Link href="/carecredit">
-                                        <button className="bg-gradient-to-r from-logo-yellow to-logo-yellow/90 hover:from-logo-yellow/90 hover:to-logo-yellow/80 text-gray-900 px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
-                                            Learn About CareCredit
-                                        </button>
+                                        <Button
+                                            text="Learn About CareCredit"
+                                            variant="yellow"
+                                            size="lg"
+                                            rounded="lg"
+                                        />
                                     </Link>
                                     <a href="https://www.carecredit.com/apply/" target="_blank" rel="noopener noreferrer">
-                                        <button className="border-2 border-logo-yellow text-logo-yellow hover:bg-logo-yellow/10 px-8 py-4 text-lg font-semibold rounded-lg transition-all">
-                                            Apply Now
-                                        </button>
+                                        <Button
+                                            text="Apply Now"
+                                            variant="green"
+                                            size="lg"
+                                            rounded="lg"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -183,10 +194,12 @@ const Insurance = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="blue"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Button from './Button';
 
 export default function ChildrensDentalPractice() {
     const [formData, setFormData] = useState({
@@ -30,10 +31,10 @@ export default function ChildrensDentalPractice() {
                 <div className=" text-center mb-16">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-2" style={{ color: '#a4b55f' }}>
                         WHY CHOOSE OUR CHILDREN'S {''}
-                        <br  className='hidden lg:block'/>
+                        <br className='hidden lg:block' />
                         DENTAL PRACTICE IN CHINO?
                     </h1>
-                   
+
 
                 </div>
 
@@ -127,10 +128,10 @@ export default function ChildrensDentalPractice() {
                     {/* Right Column - Appointment Form */}
                     <div className="w-full lg:w-[500px] flex-shrink-0">
                         <div className="bg-[#f7ecd5] rounded-[50px] p-8 shadow-lg h-fit">
-                            <h2 className="text-xl font-bold text-gray-800 mb-1 text-center leading-tight">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-gray-800 mb-1 text-center leading-tight">
                                 SCHEDULE YOUR CHILD'S
                             </h2>
-                            <h2 className="text-xl font-bold text-gray-800 mb-3 text-center leading-tight">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl  font-bold text-gray-800 mb-3 text-center leading-tight">
                                 DENTAL APPOINTMENT
                             </h2>
                             <p className="text-gray-600 text-sm mb-6 text-center leading-relaxed">
@@ -198,13 +199,16 @@ export default function ChildrensDentalPractice() {
                                     <option value="other">Other</option>
                                 </select>
 
-                                <button
-                                    onClick={handleSubmit}
-                                    className="w-full py-4 mt-2 rounded-full text-white font-bold text-base shadow-lg hover:shadow-xl transition-shadow duration-300"
-                                    style={{ backgroundColor: '#e6c84a' }}
-                                >
-                                    Book Appointments
-                                </button>
+                                <div className="mt-2">
+                                    <Button
+                                        text="Book Appointments"
+                                        onClick={handleSubmit}
+                                        fullWidth={true}
+                                        size="lg"
+                                        rounded="full"
+                                        variant="yellow"
+                                    />
+                                </div>
                             </div>
 
 

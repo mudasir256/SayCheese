@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Button from './Button';
 
 export default function ReadyToGive() {
   return (
@@ -11,19 +12,23 @@ export default function ReadyToGive() {
         <div className="max-w-7xl h-[300px] max-lg:min-h-[400px] max-lg:h-auto max-lg:py-8 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between w-full max-lg:gap-6">
 
-            <div className="text-white space-y-4 md:space-y-6 bottom-10 max-lg:bottom-0 relative text-center max-lg:order-2">
+            <div className="text-white space-y-4  bottom-10 max-lg:bottom-0 relative text-center max-lg:order-2">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight px-2 sm:px-0">
-                READY TO GIVE YOUR CHILD 
-                <br  className='hidden lg:block'/>
-               THE BEST DENTAL CARE IN CHINO?
+                READY TO GIVE YOUR CHILD
+                <br className='hidden lg:block' />
+                THE BEST DENTAL CARE IN CHINO?
               </h2>
               <p className="text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
                 Call us at <span className="font-semibold">(909) 479-6030</span> and see why families throughout Chino, Chino Hills, and the Inland Empire trust Say Cheese Kids with their children&apos;s smiles.
               </p>
-              <div className="flex justify-center pt-2">
-                <button className="bg-pink-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg md:text-xl transition-colors shadow-lg w-full sm:w-auto">
-                  Call (909) 479-6030 Today
-                </button>
+              <div className="flex justify-center">
+                <Button
+                  text="Call (909) 479-6030 Today"
+
+                  size="lg"
+                  rounded="full"
+                  variant="pink"
+                />
               </div>
             </div>
 

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronDown } from 'lucide-react';
+import Button from './Button';
 
 interface NavLinkProps {
   href: string;
@@ -75,16 +76,18 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white">
-      <nav className="">
+      <nav >
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20">
             <div className="hidden lg:block">
-              <Link
-                href="tel:9094796030"
-                className="bg-[#E57FA3] hover:bg-[#d66e92]  text-white px-6 py-2 rounded-md font-medium transition-colors text-sm"
-              >
-                Call (909) 479-6030
-              </Link>
+              <a href="tel:9094796030">
+                <Button
+                  text="Call (909) 479-6030"
+                  variant="pink"
+                  size="sm"
+                  rounded="md"
+                />
+              </a>
             </div>
             <div className="lg:hidden flex items-center justify-center">
               <div className="w-16 h-16 flex items-center justify-center">
@@ -187,11 +190,13 @@ export default function Header() {
               </button>
 
               <div className="hidden lg:block">
-                <Link
-                  href="/appointment"
-                  className="bg-[#B4D96C] hover:bg-[#a3c95f] text-white px-6 py-2 rounded-md font-medium transition-colors text-sm"
-                >
-                  Appointment
+                <Link href="/appointment">
+                  <Button
+                    text="Appointment"
+                    variant="green"
+                    size="sm"
+                    rounded="md"
+                  />
                 </Link>
               </div>
             </div>
@@ -251,19 +256,29 @@ export default function Header() {
               })}
 
               <div className="pt-4 space-y-2 border-t border-gray-200 mt-2">
-                <Link
+                <a
                   href="tel:9094796030"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full bg-[#E57FA3] hover:bg-[#d66e92] text-white px-4 py-3 rounded-md font-medium transition-colors text-base text-center"
                 >
-                  Call (909) 479-6030
-                </Link>
+                  <Button
+                    text="Call (909) 479-6030"
+                    variant="pink"
+                    size="md"
+                    rounded="md"
+                    fullWidth={true}
+                  />
+                </a>
                 <Link
                   href="/appointment"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full bg-[#B4D96C] hover:bg-[#a3c95f] text-white px-4 py-3 rounded-md font-medium transition-colors text-base text-center"
                 >
-                  Appointment
+                  <Button
+                    text="Appointment"
+                    variant="green"
+                    size="md"
+                    rounded="md"
+                    fullWidth={true}
+                  />
                 </Link>
               </div>
             </div>

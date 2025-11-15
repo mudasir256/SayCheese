@@ -1,5 +1,6 @@
 import { Star, Smile, Clock, Shield, CheckCircle, Phone } from "lucide-react";
 import Link from "next/link";
+import Button from "./Button";
 
 const Orthodontics = () => {
     const benefits = [
@@ -57,15 +58,20 @@ const Orthodontics = () => {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Schedule Consultation
-                                    </button>
+                                    <Button
+                                        text="Schedule Consultation"
+                                        variant="blue"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                                 <Link href="/service">
-                                    <button className="border-2 border-logo-yellow text-logo-yellow hover:bg-logo-yellow/10 px-8 py-4 text-lg font-semibold rounded-lg transition-all">
-                                        Learn About Options
-                                    </button>
+                                    <Button
+                                        text="Learn About Options"
+                                        variant="outline"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </Link>
                             </div>
                         </div>
@@ -144,9 +150,13 @@ const Orthodontics = () => {
                                             ))}
                                         </ul>
                                         <a href="tel:9094796030" className="block w-full">
-                                            <button className="w-full bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl">
-                                                Learn More
-                                            </button>
+                                            <Button
+                                                text="Learn More"
+                                                variant={index === 0 ? "blue" : index === 1 ? "green" : "yellow"}
+                                                size="md"
+                                                rounded="lg"
+                                                fullWidth={true}
+                                            />
                                         </a>
                                     </div>
                                 </div>
@@ -213,10 +223,12 @@ const Orthodontics = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a href="tel:9094796030">
-                                    <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2">
-                                        <Phone className="h-5 w-5" />
-                                        Call (909) 479-6030
-                                    </button>
+                                    <Button
+                                        text="Call (909) 479-6030"
+                                        variant="blue"
+                                        size="lg"
+                                        rounded="lg"
+                                    />
                                 </a>
                             </div>
                         </div>

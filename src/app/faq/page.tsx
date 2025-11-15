@@ -3,6 +3,7 @@
 import { Heart, Smile, Star, Phone, MapPin, Clock, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import Button from "@/components/Button";
 
 const FAQs = () => {
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
@@ -134,9 +135,12 @@ const FAQs = () => {
                 Find answers to common questions about pediatric dental care, orthodontics, and what to expect at Say Cheese Kids Dental.
               </p>
               <Link href="/contact">
-                <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
-                  Still Have Questions? Contact Us
-                </button>
+                <Button
+                  text="Still Have Questions? Contact Us"
+                  variant="blue"
+                  size="lg"
+                  rounded="lg"
+                />
               </Link>
             </div>
           </div>
@@ -276,14 +280,20 @@ const FAQs = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <button className="bg-gradient-to-r from-logo-blue to-logo-green hover:from-logo-blue/90 hover:to-logo-green/90 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
-                    Schedule Appointment
-                  </button>
+                  <Button
+                    text="Schedule Appointment"
+                    variant="blue"
+                    size="lg"
+                    rounded="lg"
+                  />
                 </Link>
                 <Link href="/">
-                  <button className="border-2 border-logo-blue text-logo-blue hover:bg-logo-blue/10 px-8 py-4 text-lg font-semibold rounded-lg transition-all">
-                    Back to Homepage
-                  </button>
+                  <Button
+                    text="Back to Homepage"
+                    variant="outline"
+                    size="lg"
+                    rounded="lg"
+                  />
                 </Link>
               </div>
             </div>
