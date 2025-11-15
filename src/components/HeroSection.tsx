@@ -47,7 +47,7 @@ export default function HeroSection() {
           <h1 className="text-white text-[8px] sm:text-[10px] md:text-xs font-semibold mb-1 tracking-[0.25em]">
             CHINO&apos;S TRUSTED KIDS
           </h1>
-          <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none mb-2">
+          <h2 className="text-white text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black tracking-tight leading-none mb-2">
             DENTIST &<br />ORTHODONTICS
           </h2>
 
@@ -56,9 +56,9 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="relative w-full max-w-7xl mx-auto flex items-center justify-center py-4 md:py-8">
+        <div className="relative w-full   flex items-center justify-center py-4 md:py-8">
           {/* Left Character - Princess */}
-          <div className="absolute left-[10%] md:left-[calc(58%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[15vw] md:w-[20vw] z-20">
+          <div className="absolute left-[8%] sm:left-[6%] md:left-[4%] lg:left-[11%] xl:left-[13%] 2xl:left-[12%] bottom-[60%] sm:bottom-[50%] md:bottom-[54%] lg:bottom-[52%]  xl:bottom-[50%] w-[22vw] sm:w-[24vw] md:w-[26vw] lg:w-[24vw]  xl:w-[23vw] 2xl:w-[22vw] z-20">
             <Image
               src="/Images/superman girl.png"
               alt="Princess Character"
@@ -76,28 +76,28 @@ export default function HeroSection() {
               alt="Teeth with Braces"
               width={500}
               height={200}
-              className="w-[25vw] md:w-[32vw] mx-auto h-auto -translate-y-4 md:-translate-y-8"
+              className="w-[50vw] sm:w-[50vw] md:w-[52vw] lg:w-[42vw]  xl:w-[41vw] 2xl:w-[43vw] h-auto -translate-y-2 sm:-translate-y-8 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-16 2xl:-translate-y-20"
               priority
             />
             
             {/* Text positioned between characters - centered horizontally */}
-            <div className="absolute top-[20%] md:top-[45%] left-1/2 transform -translate-x-1/2 w-[70vw] sm:w-[60vw] md:w-auto max-w-md z-30 px-2">
-              <h3 className="text-white text-center text-[9px] sm:text-[10px] md:text-sm lg:text-base xl:text-lg font-bold tracking-wide leading-tight">
+            <div className="  -translate-y-6 md:-translate-y-16 lg:-translate-y-16  xl:-translate-y-24 left-1/2 transform  w-[70vw] sm:w-[60vw] md:w-auto max-w-md z-30 px-2">
+              <h3 className="text-white text-center text-[15px] sm:text-[10px] md:text-sm lg:text-base xl:text-3xl font-bold tracking-wide leading-tight">
                 GENTLE, FUN DENTAL CARE
                 <br />
                 FOR CHILDREN & TEENS
               </h3>
             </div>
             
-            <div className="w-full lg:max-w-2xl mt-1 md:mt-2 lg:-translate-y-2">
+            <div className="w-full lg:max-w-2xl  -translate-y-6 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-24">
               <p className="text-white text-center text-xs sm:text-sm md:text-base mt-2 px-4 leading-relaxed">
-                At Say Cheese Kids Dental & Orthodontics, we specialize in creating positive dental experiences for children of all ages. Our experienced dentist, Dr. Joshua Kohan, provides comprehensive dental care including routine cleanings, kids braces through our orthodontic partners, emergency dental treatment, and comprehensive children&apos;s dental services in a comfortable, child-friendly environment.
+              Say Cheese Kids Dental & Orthodontics offers child-friendly dental care, including cleanings, braces, emergency treatments, and full pediatric services by Dr. Joshua Kohan.
               </p>
             </div>
           </div>
           
           {/* Right Character - Superhero */}
-          <div className="absolute right-[10%] md:right-[calc(55%-36vw-2%)] bottom-[63%] md:bottom-[40%] lg:bottom-[48%] w-[15vw] md:w-[20vw] z-20">
+          <div className="absolute right-[5%] sm:right-[1%] md:right-[1%] lg:right-[7%] xl:right-[8%]  bottom-[60%] sm:bottom-[50%] md:bottom-[54%] lg:bottom-[52%]  xl:bottom-[50%]  w-[22vw] sm:w-[24vw] md:w-[26vw] lg:w-[24vw]  xl:w-[23vw] 2xl:w-[22vw] z-20">
             <Image
               src="/Images/superman kid.png"
               alt="Superhero Boy Character"
