@@ -110,14 +110,11 @@ const Button: React.FC<ButtonProps> = ({
 
     const defaultTextColor = 'text-white';
 
-    const buttonStyle = backgroundColor ? { backgroundColor } : {};
-
     return (
         <button
             type={type}
             onClick={onClick}
             disabled={disabled}
-            style={buttonStyle}
             className={`
                 ${baseClasses}
                 ${sizeClasses[size]}
@@ -125,6 +122,7 @@ const Button: React.FC<ButtonProps> = ({
                 ${textColor || defaultTextColor}
                 ${fullWidth ? 'w-full' : ''}
             `}
+            {...(backgroundColor && { style: { backgroundColor } })}
         >
             {/* Subtle shine effect on hover */}
             <span className="absolute inset-0 overflow-hidden rounded-[inherit]">

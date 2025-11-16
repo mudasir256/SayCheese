@@ -21,6 +21,17 @@
   }
 }
 
+/* Custom animation utilities */
+@layer utilities {
+  .animate-scroll-left {
+    animation: scroll 30s linear infinite;
+  }
+  
+  .pause-animation:hover {
+    animation-play-state: paused;
+  }
+}
+
 body {
   font-family: var(--font-fredoka), sans-serif;
   margin: 0;

@@ -1,10 +1,10 @@
-import HeroSection from "@/components/HeroSection";
-import WhyChoose from "@/components/WhyChoose";
-import AboutSection from "@/components/About";
-import Comprehensive from "@/components/Comprehensive";
-import WhyChoosetwo from "@/components/WhyChoosetwo";
-import ReadyToGive from "@/components/ReadyToGive";
-import Reviews from "@/components/Reviews";
+import HeroSection from "@/components/HeroSection/index";
+import WhyChoose from "@/components/WhyChoose/index";
+import AboutSection from "@/components/About/index";
+import Comprehensive from "@/components/Comprehensive/index";
+import WhyChoosetwo from "@/components/WhyChoosetwo/index";
+import ReadyToGive from "@/components/ReadyToGive/index";
+import Reviews from "@/components/Reviews/index";
 
 
 export default function Home() {
