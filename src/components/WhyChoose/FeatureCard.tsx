@@ -17,7 +17,7 @@ export const FeatureCard = memo<FeatureCardProps>(({ feature }) => {
   return (
     <div className={CARD_CONTAINER}>
       <div className={CARD_ICON_WRAPPER}>
-        <FeatureIcon type={feature.id as any} />
+        <FeatureIcon type={feature.id} />
       </div>
 
       <h3 className={CARD_TITLE}>

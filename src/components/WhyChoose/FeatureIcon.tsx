@@ -1,16 +1,17 @@
-import { memo } from 'react';
+import { JSX, memo } from 'react';
 
-type IconType = 'specialized' | 'braces' | 'emergency' | 'family';
+type FeatureIdType = 'specialized-care' | 'braces-orthodontics' | 'emergency-care' | 'family-friendly';
+type IconKeyType = 'specialized' | 'braces' | 'emergency' | 'family';
 
 interface FeatureIconProps {
-  type: IconType;
+  type: FeatureIdType | string;
 }
 
 /**
  * FeatureIcon component - Different icons for each feature type
  */
 export const FeatureIcon = memo<FeatureIconProps>(({ type }) => {
-  const icons = {
+  const icons: Record<IconKeyType, JSX.Element> = {
     specialized: (
       <svg className="w-15 h-15" viewBox="0 0 60 60" aria-hidden="true">
         <circle cx="30" cy="30" r="30" fill="#ffffff" />
@@ -59,14 +60,15 @@ export const FeatureIcon = memo<FeatureIconProps>(({ type }) => {
     ),
   };
 
-  const iconMap = {
-    'specialized-care': 'specialized' as const,
-    'braces-orthodontics': 'braces' as const,
-    'emergency-care': 'emergency' as const,
-    'family-friendly': 'family' as const,
+  const iconMap: Record<string, IconKeyType> = {
+    'specialized-care': 'specialized',
+    'braces-orthodontics': 'braces',
+    'emergency-care': 'emergency',
+    'family-friendly': 'family',
   };
 
-  return icons[iconMap[type] || 'specialized'];
+  const iconKey: IconKeyType = iconMap[type] || 'specialized';
+  return icons[iconKey];
 });
 
 FeatureIcon.displayName = 'FeatureIcon';
