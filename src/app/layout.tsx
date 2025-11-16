@@ -8,11 +8,22 @@ const fredoka = Fredoka({
   variable: "--font-fredoka",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
   title: "Say Cheese Kids Dental & Orthodontics",
   description: "Creating beautiful, healthy smiles for children in Chino, CA. Gentle, comprehensive dental care in a fun, child-friendly environment.",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

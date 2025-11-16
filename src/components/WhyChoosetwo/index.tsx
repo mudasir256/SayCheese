@@ -27,9 +27,9 @@ import {
  */
 const WhyChoosetwo = memo(() => {
   return (
-    <section className={SECTION_CONTAINER} aria-labelledby="why-choose-title">
+    <section className={SECTION_CONTAINER} aria-labelledby="why-choose-two-title">
       <div className={CONTENT_WRAPPER}>
-        <h2 id="why-choose-title" className={TITLE_CLASSES}>
+        <h2 id="why-choose-two-title" className={TITLE_CLASSES}>
           {SECTION_TITLE}
           <br className="hidden lg:block" />
           {SECTION_TITLE_LINE2}

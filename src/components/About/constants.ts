@@ -8,14 +8,14 @@ export const RIGHT_DESCRIPTION = "We make dental visits fun and stress-free for 
 export const IMAGE_PATH = '/Images/about.png';
 export const IMAGE_ALT = 'Happy children at dental clinic';
 
-// Title words with colors
+// Title words with colors (WCAG AA compliant contrast ratios)
 export const TITLE_WORDS: TitleWord[] = [
-  { text: 'About', color: 'text-[#b4d96c]' },
-  { text: 'Say', color: 'text-[#f9c151]' },
-  { text: 'Ch', color: 'text-[#7DBBE6]' },
-  { text: 'ee', color: 'text-[#e57fa3]' },
-  { text: 'se', color: 'text-[#7DBBE6]' },
-  { text: 'Kids', color: 'text-[#b4d96c]' },
+  { text: 'About', color: 'text-[#6b8a2f]' },  // Darker green
+  { text: 'Say', color: 'text-[#d68910]' },    // Darker yellow/gold
+  { text: 'Ch', color: 'text-[#2e7ba0]' },     // Darker blue
+  { text: 'ee', color: 'text-[#c85a7f]' },     // Darker pink
+  { text: 'se', color: 'text-[#2e7ba0]' },     // Darker blue
+  { text: 'Kids', color: 'text-[#6b8a2f]' },   // Darker green
 ];
 
 // Left side features

@@ -14,7 +14,7 @@ export const HERO_IMAGE_ALT = 'Friendly tooth character with balloons';
 
 // CSS Classes
 export const SECTION_CONTAINER = 'w-full relative py-10';
-export const BACKGROUND_WRAPPER = 'relative bg-[#e483a8] max-lg:overflow-hidden';
+export const BACKGROUND_WRAPPER = 'relative bg-[#c85a7f] max-lg:overflow-hidden';  // Darker pink for better contrast
 export const CONTENT_WRAPPER = 'max-w-7xl h-[300px] max-lg:min-h-[400px] max-lg:h-auto max-lg:py-8 mx-auto px-4 sm:px-6 lg:px-8 relative z-10';
 export const FLEX_LAYOUT = 'flex flex-col lg:flex-row items-center justify-between w-full max-lg:gap-6';
 export const TEXT_CONTAINER = 'text-white space-y-4 bottom-10 max-lg:bottom-0 relative text-center max-lg:order-2';

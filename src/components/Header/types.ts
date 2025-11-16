@@ -15,5 +15,6 @@ export interface NavLinkProps {
   label: string;
   onClick?: () => void;
   className?: string;
+  tabIndex?: number;
 }
 

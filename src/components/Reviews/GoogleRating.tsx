@@ -18,7 +18,7 @@ export const GoogleRating = memo(() => {
           <span className={`text-2xl md:text-3xl font-bold ${GOOGLE_COLORS.l}`}>l</span>
           <span className={`text-2xl md:text-3xl font-bold ${GOOGLE_COLORS.e}`}>e</span>
         </div>
-        <span className="text-lg md:text-xl font-semibold text-[#4285F4]">
+        <span className="text-lg md:text-xl font-semibold text-[#2e7ba0]">
           {GOOGLE_RATING}
         </span>
       </div>

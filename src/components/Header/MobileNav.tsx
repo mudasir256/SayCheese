@@ -96,6 +96,17 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
     };
   }, []);
 
+  // Set inert attribute based on isOpen state
+  useEffect(() => {
+    if (mobileMenuRef.current) {
+      if (!isOpen) {
+        mobileMenuRef.current.setAttribute('inert', '');
+      } else {
+        mobileMenuRef.current.removeAttribute('inert');
+      }
+    }
+  }, [isOpen]);
+
   return (
     <div
       ref={mobileMenuRef}
@@ -120,6 +131,7 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
                   aria-haspopup="true"
                   aria-controls="mobile-service-dropdown"
                   aria-label="Service menu"
+                  tabIndex={!isOpen ? -1 : 0}
                 >
                   <span className="font-medium text-sm">{link.label}</span>
                   <ChevronDown
@@ -142,6 +154,7 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
                         className={getMobileServiceItemClasses(item.href)}
                         role="menuitem"
                         aria-current={pathname === item.href ? 'page' : undefined}
+                        tabIndex={!isOpen ? -1 : 0}
                       >
                         {item.label}
                       </button>
@@ -159,6 +172,7 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
               label={link.label}
               onClick={onClose}
               className="block px-4 py-3 hover:bg-logo-blue/10 hover:text-logo-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-inset"
+              tabIndex={!isOpen ? -1 : 0}
             />
           );
         })}
@@ -170,6 +184,7 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
             onClick={onClose}
             className="block"
             aria-label={`Call us at ${PHONE_DISPLAY}`}
+            tabIndex={!isOpen ? -1 : 0}
           >
             <Button
               text={`Call ${PHONE_DISPLAY}`}
@@ -185,6 +200,7 @@ export const MobileNav = memo<MobileNavProps>(({ isOpen, onClose, menuButtonRef 
             onClick={onClose}
             className="block"
             aria-label="Book an appointment"
+            tabIndex={!isOpen ? -1 : 0}
           >
             <Button
               text="Appointment"
