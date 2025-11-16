@@ -11,6 +11,9 @@ export const DOCTOR_DESCRIPTION =
 export const DOCTOR_IMAGE = '/Images/doctor.png';
 export const LEARN_MORE_TEXT = 'Learn More';
 
+// Carousel settings
+export const CAROUSEL_AUTO_PLAY_INTERVAL = 4000; // 4 seconds
+
 // Dental Services Data
 export const DENTAL_SERVICES: DentalService[] = [
   {

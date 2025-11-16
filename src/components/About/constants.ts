@@ -10,12 +10,10 @@ export const IMAGE_ALT = 'Happy children at dental clinic';
 
 // Title words with colors (WCAG AA compliant contrast ratios)
 export const TITLE_WORDS: TitleWord[] = [
-  { text: 'About', color: 'text-[#6b8a2f]' },  // Darker green
-  { text: 'Say', color: 'text-[#d68910]' },    // Darker yellow/gold
-  { text: 'Ch', color: 'text-[#2e7ba0]' },     // Darker blue
-  { text: 'ee', color: 'text-[#c85a7f]' },     // Darker pink
-  { text: 'se', color: 'text-[#2e7ba0]' },     // Darker blue
-  { text: 'Kids', color: 'text-[#6b8a2f]' },   // Darker green
+  { text: 'About', color: 'text-[var(--color-logo-green)]' },  // Darker green
+  { text: 'Say', color: 'text-[var(--color-logo-yellow)]' },    // Darker yellow/gold
+  { text: 'Cheese', color: 'text-[var(--color-logo-blue)]' },     // Darker blue
+  { text: 'Kids', color: 'text-[var(--color-logo-pink)]' },   // Darker pink
 ];
 
 // Left side features
@@ -35,7 +33,7 @@ export const SECTION_CONTAINER = 'w-full relative overflow-visible bg-white';
 export const CONTENT_WRAPPER = 'relative py-16 md:py-24 px-4 sm:px-6 lg:px-8';
 export const MAX_WIDTH = 'max-w-7xl mx-auto';
 export const HEADER_SECTION = 'text-center mb-12 md:mb-16';
-export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold mb-6';
+export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[var(--color-logo-green)]';
 export const SUBTITLE_CLASSES = 'text-gray-800 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed';
 export const GRID_LAYOUT = 'grid grid-cols-1 lg:grid-cols-3 md:gap-16 items-start';
 export const SIDE_COLUMN = 'lg:col-span-1 space-y-8';

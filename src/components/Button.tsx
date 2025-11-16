@@ -65,7 +65,7 @@ const Button: React.FC<ButtonProps> = ({
 
     const variantClasses = {
         blue: `
-            bg-[#3a8db5]
+            bg-[var(--color-logo-blue)]
             hover:bg-[#2e7ba0]
             text-white 
             shadow-sm
@@ -73,7 +73,7 @@ const Button: React.FC<ButtonProps> = ({
             focus:ring-[#3a8db5]/50
         `,
         pink: `
-            bg-[#d66e92]
+            bg-[var(--color-logo-pink)]
             hover:bg-[#c85a7f]
             text-white 
             shadow-sm
@@ -81,7 +81,7 @@ const Button: React.FC<ButtonProps> = ({
             focus:ring-[#d66e92]/50
         `,
         yellow: `
-            bg-[#e8a82f]
+            bg-[var(--color-logo-yellow)]
             hover:bg-[#d6991f]
             text-white
             shadow-sm
@@ -89,7 +89,7 @@ const Button: React.FC<ButtonProps> = ({
             focus:ring-[#e8a82f]/50
         `,
         green: `
-            bg-[#9fb04f]
+            bg-[var(--color-logo-green)]
             hover:bg-[#8fa03f]
             text-white 
             shadow-sm

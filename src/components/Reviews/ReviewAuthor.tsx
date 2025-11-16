@@ -15,14 +15,15 @@ export const ReviewAuthor = memo<ReviewAuthorProps>(({
 }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3 mt-4 w-full max-w-md lg:max-w-none mx-auto lg:mx-0">
-      <Image
-        src={avatarSrc}
-        alt={`${author}'s avatar`}
-        width={50}
-        height={50}
-        className="rounded-full"
-        style={{ width: "auto", height: "auto" }}
-      />
+      <div className="relative w-12 h-12 flex-shrink-0">
+        <Image
+          src={avatarSrc}
+          alt={`${author}'s avatar`}
+          fill
+          sizes="48px"
+          className="rounded-full object-cover"
+        />
+      </div>
       <div>
         <p className="text-gray-800 font-semibold text-base text-center lg:text-left">
           {author}

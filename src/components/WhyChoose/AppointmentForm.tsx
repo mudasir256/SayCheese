@@ -103,11 +103,7 @@ export const AppointmentForm = memo(() => {
               </option>
             ))}
           </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-600">
-            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 12 12" aria-hidden="true">
-              <path d="M6 9L1 4h10z" />
-            </svg>
-          </div>
+        
         </div>
 
         <div className="mt-2">

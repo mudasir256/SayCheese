@@ -6,6 +6,7 @@ export interface Review {
   author: string;
   childName: string;
   childAge: number;
+  avatarSrc?: string;
 }
 
 export interface ReviewCardProps {

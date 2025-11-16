@@ -16,6 +16,7 @@ import {
   TITLE_CLASSES,
   DESCRIPTION_CLASSES,
   CAROUSEL_CONTAINER,
+  CAROUSEL_AUTO_PLAY_INTERVAL,
 } from './constants';
 
 /**
@@ -32,7 +33,8 @@ import {
 const Comprehensive = memo(() => {
   const { currentIndex, nextSlide, prevSlide, goToSlide, visibleItems } = useCarousel(
     DENTAL_SERVICES.length,
-    2
+    2,
+    CAROUSEL_AUTO_PLAY_INTERVAL
   );
 
   // Current card for mobile (single card view)

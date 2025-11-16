@@ -14,21 +14,21 @@ export const SCROLL_ANIMATION_DURATION = 30; // 30 seconds
 // Images
 export const DEFAULT_AVATAR = '/images/doctor.png';
 
-// CSS Classes
+// CSS Classes - Official Google Brand Colors
 export const GOOGLE_COLORS = {
-  G: 'text-[#2563EB]',
-  o1: 'text-[#DC2626]',
-  o2: 'text-[#CA8A04]',
-  g: 'text-[#2563EB]',
-  l: 'text-[#16A34A]',
-  e: 'text-[#DC2626]',
+  G: 'text-[#4285F4]',   // Google Blue
+  o1: 'text-[#EA4335]',  // Google Red
+  o2: 'text-[#FBBC04]',  // Google Yellow
+  g: 'text-[#4285F4]',   // Google Blue
+  l: 'text-[#34A853]',   // Google Green
+  e: 'text-[#EA4335]',   // Google Red
 } as const;
 
 // Tailwind CSS class constants
 export const SECTION_CONTAINER = 'w-full bg-white py-12 md:py-16 px-4 sm:px-6 lg:px-16';
 export const CONTENT_WRAPPER = 'max-w-7xl mx-auto';
 export const GRID_LAYOUT = 'grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start';
-export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold text-[#7a8840]';
+export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold text-[var(--color-logo-green)]';
 export const DESCRIPTION_CLASSES = 'text-gray-800 text-base md:text-lg leading-relaxed';
 export const REVIEW_CARD_BASE = 'relative w-full max-w-md mx-auto lg:mx-0 p-6 md:p-8 rounded-3xl shadow-lg min-h-[200px] sm:min-h-[220px] md:min-h-[240px] lg:min-h-[200px] flex flex-col justify-start bg-[#f5f0e8]';
 export const REVIEW_TEXT_CLASSES = 'text-gray-800 text-base md:text-lg leading-relaxed pt-4 flex-1';

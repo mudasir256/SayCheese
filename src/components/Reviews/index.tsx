@@ -66,6 +66,7 @@ const Reviews = memo(() => {
                 author={currentReview.author}
                 childName={currentReview.childName}
                 childAge={currentReview.childAge}
+                avatarSrc={currentReview.avatarSrc}
               />
             </div>
           </div>
