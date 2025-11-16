@@ -32,10 +32,10 @@ const ChildrensDentalPractice = memo(() => {
       <div className={CONTENT_WRAPPER}>
         {/* Header */}
         <div className={HEADER_SECTION}>
-          <h1 id="why-choose-title" className={TITLE_CLASSES}>
+          <h2 id="why-choose-title" className={TITLE_CLASSES}>
             {SECTION_TITLE} <br className="hidden lg:block" />
             {SECTION_TITLE_LINE2}
-          </h1>
+          </h2>
         </div>
 
         {/* Main Content Grid */}

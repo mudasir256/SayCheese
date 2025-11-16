@@ -57,10 +57,10 @@ const Button: React.FC<ButtonProps> = ({
     `;
 
     const sizeClasses = {
-        sm: "px-5 py-2 text-sm",
-        md: "px-7 py-2.5 text-base",
-        lg: "px-9 py-3 text-lg",
-        responsive: "px-5 py-2 text-sm md:px-7 md:py-2.5 md:text-base lg:px-9 lg:py-3 lg:text-lg"
+        sm: "px-5 py-2.5 text-sm min-h-[44px]",
+        md: "px-7 py-3 text-base min-h-[44px]",
+        lg: "px-9 py-3.5 text-lg min-h-[48px]",
+        responsive: "px-5 py-2.5 text-sm md:px-7 md:py-3 md:text-base lg:px-9 lg:py-3.5 lg:text-lg min-h-[44px] md:min-h-[48px]"
     };
 
     const variantClasses = {

@@ -22,8 +22,8 @@ export const AppointmentForm = memo(() => {
 
   return (
     <div className={FORM_CARD}>
-      <h2 className={`${FORM_TITLE} mb-1`}>{FORM_TITLE_LINE1}</h2>
-      <h2 className={`${FORM_TITLE} mb-3`}>{FORM_TITLE_LINE2}</h2>
+      <h3 className={`${FORM_TITLE} mb-1`}>{FORM_TITLE_LINE1}</h3>
+      <h3 className={`${FORM_TITLE} mb-3`}>{FORM_TITLE_LINE2}</h3>
       
       <p className={FORM_SUBTITLE_CLASSES}>
         {FORM_SUBTITLE.split('\n').map((line, i) => (

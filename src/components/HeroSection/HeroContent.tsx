@@ -27,6 +27,7 @@ export const HeroContent = memo(() => {
         height={200}
         className={TEETH_IMAGE_CLASSES}
         priority
+        fetchPriority="high"
       />
 
       {/* Hero Text */}

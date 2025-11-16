@@ -10,12 +10,12 @@ export const NAVIGATION_DELAY = 100;
 export const ESCAPE_KEY = 'Escape';
 
 // Class name constants
-export const NAV_LINK_BASE = 'px-4 xl:px-6 py-2 rounded-md font-medium transition-all duration-200 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-1';
+export const NAV_LINK_BASE = 'px-4 xl:px-6 py-2 rounded-md font-medium transition-all duration-200 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-1 min-h-[44px] flex items-center';
 export const NAV_LINK_ACTIVE = 'bg-logo-blue text-white';
-export const NAV_LINK_INACTIVE = 'text-black hover:bg-logo-blue/10 hover:text-logo-blue';
+export const NAV_LINK_INACTIVE = 'text-gray-900 hover:bg-logo-blue/10 hover:text-logo-blue';
 
-export const SERVICE_BUTTON_BASE = 'px-4 xl:px-6 py-2 rounded-md font-medium transition-colors text-sm flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-1';
-export const SERVICE_ITEM_BASE = 'block px-4 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-inset';
+export const SERVICE_BUTTON_BASE = 'px-4 xl:px-6 py-2 rounded-md font-medium transition-colors text-sm flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-1 min-h-[44px]';
+export const SERVICE_ITEM_BASE = 'block px-4 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-inset min-h-[44px] flex items-center';
 
 // Navigation items
 export const SERVICE_ITEMS = [

@@ -20,14 +20,14 @@ export const TITLE_WORDS: TitleWord[] = [
 
 // Left side features
 export const LEFT_FEATURES: Feature[] = [
-  { id: 'childrens-dentistry', label: "Children's Dentistry", color: 'bg-[#b4d96c] hover:bg-[#a3c85b] text-gray-800' },
-  { id: 'orthodontics', label: 'Orthodontics Available', color: 'bg-[#f9c151] hover:bg-[#e8b040] text-gray-800' },
+  { id: 'childrens-dentistry', label: "Children's Dentistry", color: 'bg-[#b4d96c] hover:bg-[#a3c85b] text-gray-900' },
+  { id: 'orthodontics', label: 'Orthodontics Available', color: 'bg-[#f9c151] hover:bg-[#e8b040] text-gray-900' },
 ];
 
 // Right side features
 export const RIGHT_FEATURES: Feature[] = [
-  { id: 'after-hours', label: 'After-Hours Care', color: 'bg-[#7DBBE6] hover:bg-[#6CAAD5] text-gray-800' },
-  { id: 'comfortable', label: 'Comfortable', color: 'bg-[#e57fa3] hover:bg-[#d46e92] text-gray-800' },
+  { id: 'after-hours', label: 'After-Hours Care', color: 'bg-[#7DBBE6] hover:bg-[#6CAAD5] text-gray-900' },
+  { id: 'comfortable', label: 'Comfortable', color: 'bg-[#e57fa3] hover:bg-[#d46e92] text-gray-900' },
 ];
 
 // CSS Classes
@@ -36,10 +36,10 @@ export const CONTENT_WRAPPER = 'relative py-16 md:py-24 px-4 sm:px-6 lg:px-8';
 export const MAX_WIDTH = 'max-w-7xl mx-auto';
 export const HEADER_SECTION = 'text-center mb-12 md:mb-16';
 export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold mb-6';
-export const SUBTITLE_CLASSES = 'text-gray-700 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed';
+export const SUBTITLE_CLASSES = 'text-gray-800 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed';
 export const GRID_LAYOUT = 'grid grid-cols-1 lg:grid-cols-3 md:gap-16 items-start';
 export const SIDE_COLUMN = 'lg:col-span-1 space-y-8';
-export const DESCRIPTION_CLASSES = 'text-gray-800 text-base md:text-lg leading-relaxed pt-2';
+export const DESCRIPTION_CLASSES = 'text-gray-900 text-base md:text-lg leading-relaxed pt-2';
 export const IMAGE_CONTAINER = 'lg:col-span-1 flex lg:-translate-y-12 relative';
 export const IMAGE_WRAPPER = 'relative w-full max-w-md h-82';
 export const BUTTON_BASE = 'py-3 px-6 rounded-full font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2';

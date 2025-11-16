@@ -4,7 +4,7 @@ import type { Feature } from './types';
 // Content
 export const SECTION_TITLE = 'WHY CHOOSE SAY CHEESE KIDS FOR YOUR';
 export const SECTION_TITLE_LINE2 = "CHILD'S DENTAL CARE IN CHINO?";
-export const HERO_IMAGE_PATH = '/Images/whyChoose.png';
+export const HERO_IMAGE_PATH = '/Images/whychoose.png';
 export const HERO_IMAGE_ALT = "Dentist examining child's dental X-ray";
 
 // Features data

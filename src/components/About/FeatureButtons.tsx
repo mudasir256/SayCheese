@@ -20,7 +20,7 @@ export const FeatureButtons = memo<FeatureButtonsProps>(({ features, alignment =
         <Link
           key={feature.id}
           href="/service"
-          className={`${BUTTON_BASE} ${feature.color}`}
+          className={`${BUTTON_BASE} ${feature.color} min-h-[48px] inline-flex items-center justify-center`}
         >
           {feature.label}
         </Link>
