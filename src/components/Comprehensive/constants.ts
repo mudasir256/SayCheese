@@ -95,7 +95,5 @@ export const CARD_TITLE = 'text-2xl font-bold text-gray-800 mb-4';
 export const CARD_DESCRIPTION = 'text-gray-700 text-sm md:text-base leading-relaxed mb-6';
 export const CARD_DIVIDER = 'w-16 h-1 rounded-full mb-6';
 export const DOT_BASE =
-  'w-2 h-2 rounded-full transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2';
-export const DOT_ACTIVE = 'bg-pink-500 w-8';
-export const DOT_INACTIVE = 'bg-pink-200 hover:bg-pink-300';
+  'min-w-[44px] min-h-[44px] p-2 rounded-full flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2';
 

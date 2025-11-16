@@ -32,6 +32,6 @@ export const TITLE_CLASSES = 'text-2xl md:text-3xl lg:text-4xl font-bold text-[#
 export const DESCRIPTION_CLASSES = 'text-gray-800 text-base md:text-lg leading-relaxed';
 export const REVIEW_CARD_BASE = 'relative w-full max-w-md mx-auto lg:mx-0 p-6 md:p-8 rounded-3xl shadow-lg min-h-[200px] sm:min-h-[220px] md:min-h-[240px] lg:min-h-[200px] flex flex-col justify-start bg-[#f5f0e8]';
 export const REVIEW_TEXT_CLASSES = 'text-gray-800 text-base md:text-lg leading-relaxed pt-4 flex-1';
-export const DOT_BASE = 'w-3 h-3 rounded-full transition-all duration-300 bg-[#a4b55f] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#a4b55f] focus-visible:ring-offset-2';
+export const DOT_BASE = 'min-w-[44px] min-h-[44px] p-2 flex items-center justify-center rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#a4b55f] focus-visible:ring-offset-2';
 export const SCROLLING_TEXT_BASE = 'text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-[102px] uppercase tracking-wide font-bold pr-8 text-[#4a4a4a]';
 

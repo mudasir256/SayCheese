@@ -86,7 +86,11 @@ export const AppointmentForm = memo(() => {
         />
 
         <div className="relative">
+          <label htmlFor="appointmentType" className="sr-only">
+            Appointment Type
+          </label>
           <select
+            id="appointmentType"
             name="appointmentType"
             value={formData.appointmentType}
             onChange={handleChange}

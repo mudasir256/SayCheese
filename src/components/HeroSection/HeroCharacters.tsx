@@ -18,6 +18,7 @@ export const HeroCharacters = memo(() => {
             height={character.height}
             className="w-full h-auto object-contain"
             priority
+            sizes="(max-width: 640px) 22vw, (max-width: 1024px) 24vw, 23vw"
           />
         </div>
       ))}

@@ -28,15 +28,16 @@ export const HeroContent = memo(() => {
         className={TEETH_IMAGE_CLASSES}
         priority
         fetchPriority="high"
+        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 52vw, 42vw"
       />
 
       {/* Hero Text */}
       <div className={HERO_TEXT_WRAPPER}>
-        <h3 className={HERO_TITLE_CLASSES}>
+        <h2 className={HERO_TITLE_CLASSES}>
           {HERO_TITLE}
           <br />
           {HERO_SUBTITLE}
-        </h3>
+        </h2>
       </div>
 
       {/* Description */}

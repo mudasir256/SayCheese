@@ -12,7 +12,7 @@ export const BusinessHours = memo(() => {
       {BUSINESS_HOURS.map((item) => (
         <div key={item.day} className="flex justify-between items-center">
           <span className="font-medium lg:font-normal">{item.day}</span>
-          <span className="text-white/90 lg:text-white lg:ml-4">{item.hours}</span>
+          <span className="text-white lg:ml-4">{item.hours}</span>
         </div>
       ))}
     </FooterSection>

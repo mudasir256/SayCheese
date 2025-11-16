@@ -75,6 +75,7 @@ const AboutSection = memo(() => {
                   sizes="(max-width: 1024px) 100vw, 448px"
                   className="object-cover rounded-xl"
                   priority
+                  fetchPriority="high"
                 />
               </div>
             </div>

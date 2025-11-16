@@ -57,5 +57,5 @@ export const QUICK_LINKS: QuickLink[] = [
 
 // CSS class constants
 export const FOOTER_SECTION_TITLE = 'text-lg font-bold mb-5 pb-2 border-b border-white/20 lg:border-0 lg:text-xl lg:font-semibold lg:mb-6';
-export const FOOTER_LINK_BASE = 'text-white/90 lg:text-white hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#5B9EC4] rounded';
+export const FOOTER_LINK_BASE = 'text-white hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#5B9EC4] rounded';
 

@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { CAROUSEL_BUTTON_BASE, DOT_BASE, DOT_ACTIVE, DOT_INACTIVE } from './constants';
+import { CAROUSEL_BUTTON_BASE, DOT_BASE } from './constants';
 import type { CarouselControlsProps } from './types';
 
 /**
@@ -55,10 +55,12 @@ export const CarouselControls = memo<CarouselControlsProps>(({
           <button
             key={index}
             onClick={() => onDotClick(index)}
-            className={`${DOT_BASE} ${index === currentIndex ? DOT_ACTIVE : DOT_INACTIVE}`}
+            className={DOT_BASE}
             aria-label={`Go to service ${index + 1}`}
             aria-current={index === currentIndex ? 'true' : 'false'}
-          />
+          >
+            <span className={`w-2 h-2 rounded-full transition-all ${index === currentIndex ? 'w-8 bg-pink-500' : 'bg-pink-200 hover:bg-pink-300'}`} aria-hidden="true" />
+          </button>
         ))}
       </div>
     </>

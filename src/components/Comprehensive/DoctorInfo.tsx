@@ -10,13 +10,13 @@ export const DoctorInfo = memo(() => {
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4">
       <div className="flex-shrink-0">
-        <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
+        <div className="relative w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
           <Image
             src={DOCTOR_IMAGE}
             alt={DOCTOR_NAME}
-            width={64}
-            height={64}
+            fill
             className="object-cover"
+            sizes="64px"
           />
         </div>
       </div>

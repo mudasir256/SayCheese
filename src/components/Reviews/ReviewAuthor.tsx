@@ -21,6 +21,7 @@ export const ReviewAuthor = memo<ReviewAuthorProps>(({
         width={50}
         height={50}
         className="rounded-full"
+        style={{ width: "auto", height: "auto" }}
       />
       <div>
         <p className="text-gray-800 font-semibold text-base text-center lg:text-left">

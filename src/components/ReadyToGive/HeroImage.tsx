@@ -17,6 +17,7 @@ export const HeroImage = memo(() => {
         height={950}
         className={IMAGE_CLASSES}
         priority
+        fetchPriority="high"
         sizes="(max-width: 1024px) 200px, 750px"
       />
     </div>
