@@ -102,7 +102,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: `${baseUrl}/Images/logosaycheese.png`,
           width: 1200,
           height: 630,
-          alt: metadata.openGraph?.title || 'Service',
+          alt: metadata.openGraph?.title?.toString() || 'Service',
         },
       ],
     },
