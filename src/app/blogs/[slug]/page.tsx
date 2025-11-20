@@ -40,6 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.saycheesekidsdental.com';
+  
   return {
     title: `${post.title} | Say Cheese Kids Dental`,
     description: post.excerpt,
@@ -51,6 +53,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
+      url: `${baseUrl}/blogs/${post.slug}`,
+      images: [
+        {
+          url: `${baseUrl}/Images/logosaycheese.png`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [`${baseUrl}/Images/logosaycheese.png`],
+    },
+    alternates: {
+      canonical: `${baseUrl}/blogs/${post.slug}`,
     },
   };
 }

@@ -7,6 +7,7 @@ import { ReviewCard } from './ReviewCard';
 import { ReviewAuthor } from './ReviewAuthor';
 import { CarouselDots } from './CarouselDots';
 import { ScrollingBanner } from './ScrollingBanner';
+import Map from '@/components/Map';
 import { useAutoCarousel } from './hooks/useAutoCarousel';
 import {
   SECTION_TITLE,
@@ -72,6 +73,9 @@ const Reviews = memo(() => {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <Map />
 
       {/* Scrolling Banner */}
       <ScrollingBanner />

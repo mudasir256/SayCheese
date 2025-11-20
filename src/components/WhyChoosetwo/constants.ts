@@ -5,7 +5,7 @@ import type { Feature } from './types';
 export const SECTION_TITLE = 'WHY CHOOSE SAY CHEESE KIDS FOR YOUR';
 export const SECTION_TITLE_LINE2 = "CHILD'S DENTAL CARE IN CHINO?";
 // HD Unsplash image - Doctor examining/checking a child
-export const HERO_IMAGE_PATH = 'https://images.unsplash.com/photo-1674775372064-8c75d3f8c757?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGRvY3RvciUyMGNoZWNrJTIwY2hpbGQlMjB0ZWV0aHxlbnwwfHwwfHx8MA%3D%3D';
+export const HERO_IMAGE_PATH = '/images/whychoose.png';
 export const HERO_IMAGE_ALT = "Doctor examining a child during check-up";
 
 // Features data

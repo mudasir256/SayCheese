@@ -1,5 +1,45 @@
 import { Heart, Award, Users, Clock } from "lucide-react";
 import Button from "@/components/Button";
+import type { Metadata } from "next";
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.saycheesekidsdental.com';
+
+export const metadata: Metadata = {
+  title: "Meet Dr. Joshua Kohan | Pediatric Dentist in Chino, CA",
+  description: "Meet Dr. Joshua Kohan, experienced pediatric dentist in Chino, CA. Over 5 years treating children with compassionate, high-quality dental care. UCLA and Nova Southeastern University graduate.",
+  keywords: [
+    "Dr. Joshua Kohan",
+    "pediatric dentist Chino",
+    "kids dentist",
+    "children's dentist",
+    "Chino pediatric dentist",
+    "UCLA dentist",
+    "Nova Southeastern dentist"
+  ],
+  openGraph: {
+    title: "Meet Dr. Joshua Kohan | Pediatric Dentist in Chino, CA",
+    description: "Experienced pediatric dentist with over 5 years treating children. Creating positive dental experiences for kids in Chino, CA.",
+    url: `${baseUrl}/about`,
+    type: "profile",
+    images: [
+      {
+        url: `${baseUrl}/Images/logosaycheese.png`,
+        width: 1200,
+        height: 630,
+        alt: "Dr. Joshua Kohan - Pediatric Dentist",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meet Dr. Joshua Kohan | Pediatric Dentist",
+    description: "Experienced pediatric dentist creating positive dental experiences for children in Chino, CA.",
+    images: [`${baseUrl}/Images/logosaycheese.png`],
+  },
+  alternates: {
+    canonical: `${baseUrl}/about`,
+  },
+};
 
 const About = () => {
     const stats = [{

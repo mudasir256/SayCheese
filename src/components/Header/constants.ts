@@ -2,6 +2,7 @@
 export const PHONE_NUMBER = '9094796030';
 export const PHONE_DISPLAY = '(909) 479-6030';
 export const LOGO_PATH = '/Images/logosaycheese.png';
+export const LOGO_PATH_MOBILE = '/Images/logosaycheesemobile.png';
 export const LOGO_ALT = 'Say Cheese Logo';
 
 // Timing constants

@@ -1,5 +1,45 @@
 import { Calendar, Clock, Phone, CheckCircle } from "lucide-react";
 import Button from "@/components/Button";
+import type { Metadata } from "next";
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.saycheesekidsdental.com';
+
+export const metadata: Metadata = {
+  title: "Schedule Appointment | Pediatric Dentist Chino, CA",
+  description: "Schedule your child's dental appointment at Say Cheese Kids Dental in Chino, CA. Book online or call (909) 479-6030. New patient visits, cleanings, orthodontic consultations, and emergency care available.",
+  keywords: [
+    "schedule dental appointment",
+    "pediatric dentist appointment",
+    "book dentist Chino",
+    "kids dentist appointment",
+    "orthodontic consultation",
+    "emergency dental care",
+    "new patient visit"
+  ],
+  openGraph: {
+    title: "Schedule Appointment | Say Cheese Kids Dental Chino",
+    description: "Book your child's dental appointment online or call (909) 479-6030. Available Monday-Friday 8AM-5PM, Saturday 8AM-2PM.",
+    url: `${baseUrl}/appointment`,
+    type: "website",
+    images: [
+      {
+        url: `${baseUrl}/Images/logosaycheese.png`,
+        width: 1200,
+        height: 630,
+        alt: "Schedule Appointment - Say Cheese Kids Dental",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Schedule Appointment | Say Cheese Kids Dental",
+    description: "Book your child's dental appointment online or call (909) 479-6030.",
+    images: [`${baseUrl}/Images/logosaycheese.png`],
+  },
+  alternates: {
+    canonical: `${baseUrl}/appointment`,
+  },
+};
 
 const Appointment = () => {
   const appointmentTypes = [

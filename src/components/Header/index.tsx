@@ -12,7 +12,8 @@ import {
     PHONE_DISPLAY,
     LOGO_PATH,
     LOGO_ALT,
-    NAV_LINKS
+    NAV_LINKS,
+    LOGO_PATH_MOBILE
 } from './constants';
 
 /**
@@ -75,15 +76,15 @@ const Header = memo(() => {
                         <div className="lg:hidden flex items-center justify-center">
                             <Link
                                 href="/"
-                                className="w-16 h-16 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-2 rounded-2xl"
+                                className="w-20 h-20 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-logo-blue focus-visible:ring-offset-2 rounded-2xl"
                                 aria-label="Say Cheese - Go to homepage"
                             >
                                 <Image
-                                    src={LOGO_PATH}
+                                    src={LOGO_PATH_MOBILE}
                                     alt={LOGO_ALT}
                                     className="rounded-2xl"
-                                    width={64}
-                                    height={64}
+                                    width={100}
+                                    height={100}
                                     priority
                                 />
                             </Link>
